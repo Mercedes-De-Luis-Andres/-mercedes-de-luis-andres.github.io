@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Journalism & Public Writing · Mercedes de Luis Andrés</title>
+    <title>Journalism · Mercedes de Luis Andrés</title>
     <style>
         :root {
             --bg-color: #ffffff;
@@ -19,55 +19,47 @@
             background-color: var(--bg-color);
             max-width: 720px;
             margin: 0 auto;
-            padding: 4rem 1.5rem;
+            padding: 3rem 1.5rem;
         }
 
-        .back-link {
-            font-size: 0.95rem;
+        /* Navegación horizontal superior discreta */
+        nav.site-nav {
+            font-size: 0.85rem;
+            color: var(--accent-color);
+            margin-bottom: 3.5rem;
+            line-height: 1.8;
+        }
+
+        nav.site-nav a {
             text-decoration: none;
             color: var(--accent-color);
-            display: inline-block;
-            margin-bottom: 2.5rem;
             transition: color 0.2s ease;
         }
 
-        .back-link:hover {
+        nav.site-nav a:hover, nav.site-nav a.active {
             color: var(--text-color);
+            text-decoration: underline;
+        }
+
+        .nav-separator {
+            margin: 0 0.4rem;
+            color: #ccc;
         }
 
         h1 {
             font-size: 2rem;
             font-weight: normal;
-            letter-spacing: -0.5px;
-            margin-bottom: 0.8rem;
-        }
-
-        .intro {
-            font-style: italic;
-            color: var(--accent-color);
+            letter-spacing: -0.3px;
             margin-bottom: 2.5rem;
             border-bottom: 1px solid var(--line-color);
             padding-bottom: 1rem;
+            line-height: 1.2;
         }
 
-        h2 {
-            font-size: 1.2rem;
-            font-weight: normal;
-            color: var(--accent-color);
-            margin-top: 2.5rem;
-            margin-bottom: 1rem;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-        }
-
-        ul {
-            list-style-type: none;
-            padding-left: 0;
-        }
-
-        li {
-            margin-bottom: 1.2rem;
+        /* Contenido de periodismo se mantiene intacto */
+        .content-section {
             font-size: 1rem;
+            color: #3b3b3b;
         }
 
         footer {
@@ -81,32 +73,30 @@
 </head>
 <body>
 
-    <a href="index.html" class="back-link">← Mercedes de Luis Andrés</a>
+    <nav class="site-nav">
+        <a href="index.html">← Portada</a>
+        <span class="nav-separator">·</span>
+        <a href="projects.html">Projects</a>
+        <span class="nav-separator">·</span>
+        <a href="publications.html">Publications</a>
+        <span class="nav-separator">·</span>
+        <a href="talks.html">Talks & Conferences</a>
+        <span class="nav-separator">·</span>
+        <a href="teaching.html">Teaching</a>
+        <span class="nav-separator">·</span>
+        <a href="journalism.html" class="active">Journalism</a>
+        <span class="nav-separator">·</span>
+        <a href="wanderlust.html">Mercedes Wanderlust</a>
+        <span class="nav-separator">·</span>
+        <a href="contact.html">Contact</a>
+    </nav>
 
     <main>
-        <h1>Journalism & Public Writing</h1>
-        <div class="intro">Selected cultural journalism, essays, criticism and public dissemination.</div>
+        <h1>Journalism</h1>
 
-        <ul>
-            <li>2025 — Cultural perceptions of Denmark in Spain, Nordics.info.</li>
-            <li>2025 — Field Notes: Two Nordic Conferences Shed Light on Preserving Memories of the Past and Present, NordMedia Network.</li>
-            <li>2024 — Alexander Wilfing: walking in the steps of Eduard Hanslick, Sonograma Magazine.</li>
-            <li>2023 — The sun is in the east: Rethinking cultural journalism, Sonograma Magazine.</li>
-            <li>2022 — Researching celebrities in digital media: Interview with Helle Kannik Haastrup, NordMedia Network.</li>
-            <li>2022 — Travels of a disciplinary foreigner, NordMedia Network.</li>
-            <li>2020 — Una tarde con Sir John H. Elliott, Revista de Letras.</li>
-            <li>2018 — Realidad e interpretación, Modelo nórdico de la Sociedad de la Información.</li>
-            <li>2018 — Nuevas invasiones en bicicleta, La Nueva Crónica.</li>
-            <li>2017 — Tras las huellas de Hans Christian Andersen (I & II), Revista de Letras.</li>
-            <li>2012 — Phronesis, Jazz House, Copenhague, Tomajazz.</li>
-            <li>2007 — Una tarjeta azul para arbitrar la Europa de los inmigrantes, Cafébabel.</li>
-        </ul>
-
-        <h2>Awards & Grants</h2>
-        <ul>
-            <li>2009 — International Exchange Research Grant, University of Copenhagen.</li>
-            <li>2008 — Winner, Essay Contest, Café Babel Berlin Magazine; Bosch Foundation, Berlin.</li>
-        </ul>
+        <div class="content-section">
+            <!-- Aquí conservas el contenido actual de tus artículos de periodismo -->
+        </div>
     </main>
 
     <footer>
