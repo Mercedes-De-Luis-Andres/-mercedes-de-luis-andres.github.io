@@ -1,335 +1,335 @@
 <!DOCTYPE html>
 
 <html lang="en">
-
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Journalism · Mercedes de Luis Andrés</title>
+<title>Writing · Mercedes de Luis Andrés</title>
 
 <style>
-
 :root {
-    --bg-color: #ffffff;
-    --text-color: #2b2b2b;
-    --accent-color: #7d6b5d;
-    --line-color: #e5e2dc;
+  --text: #2b2b2b;
+  --accent: #7d6b5d;
+  --line: #e5e2dc;
+  --bg: #ffffff;
 }
 
 body {
-    font-family: Georgia, Cambria, "Times New Roman", Times, serif;
-    line-height: 1.6;
-    color: var(--text-color);
-    background-color: var(--bg-color);
-    max-width: 720px;
-    margin: 0 auto;
-    padding: 4rem 1.5rem;
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: Georgia, "Times New Roman", serif;
+  line-height: 1.65;
 }
 
-.back-link {
-    font-size: 0.95rem;
-    text-decoration: none;
-    color: var(--accent-color);
-    display: inline-block;
-    margin-bottom: 2.5rem;
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 60px 28px 80px;
 }
 
-.back-link:hover {
-    color: var(--text-color);
+.back {
+  display: inline-block;
+  margin-bottom: 45px;
+  color: var(--accent);
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.back:hover {
+  text-decoration: underline;
 }
 
 h1 {
-    font-size: 2rem;
-    font-weight: normal;
-    letter-spacing: -0.5px;
-    margin-bottom: 0.8rem;
+  font-size: 2rem;
+  font-weight: normal;
+  margin: 0 0 14px;
 }
 
 .intro {
-    font-style: italic;
-    color: var(--accent-color);
-    margin-bottom: 2.5rem;
-    border-bottom: 1px solid var(--line-color);
-    padding-bottom: 1rem;
+  color: #666;
+  margin: 0 0 50px;
+  font-size: 1rem;
 }
 
 h2 {
-    font-size: 1.2rem;
-    font-weight: normal;
-    color: var(--accent-color);
-    margin-top: 2.5rem;
-    margin-bottom: 1.2rem;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
+  font-size: 0.85rem;
+  letter-spacing: 0.12em;
+  font-weight: normal;
+  margin: 50px 0 25px;
+  color: var(--accent);
 }
 
-ul {
-    list-style: none;
-    padding: 0;
+.item {
+  padding: 0 0 22px;
+  margin-bottom: 22px;
+  border-bottom: 1px solid var(--line);
 }
 
-li {
-    margin-bottom: 1.2rem;
-    font-size: 1rem;
+.item:last-child {
+  border-bottom: none;
+}
+
+.meta {
+  font-size: 0.9rem;
+  color: #777;
+  margin-bottom: 4px;
+}
+
+.title {
+  font-size: 1.05rem;
 }
 
 .article-link {
-    color: inherit;
-    text-decoration: none;
+  color: var(--text);
+  text-decoration: none;
 }
 
 .article-link:hover {
-    color: var(--accent-color);
+  color: var(--accent);
+  text-decoration: underline;
 }
 
 .source {
-    color: var(--accent-color);
+  color: #777;
+  font-size: 0.92rem;
+  margin-top: 3px;
 }
 
 footer {
-    border-top: 1px solid var(--line-color);
-    padding-top: 1.5rem;
-    font-size: 0.85rem;
-    color: var(--accent-color);
-    margin-top: 5rem;
+  margin-top: 70px;
+  padding-top: 20px;
+  border-top: 1px solid var(--line);
+  color: #777;
+  font-size: 0.85rem;
 }
 
+@media (max-width: 600px) {
+  main {
+    padding: 40px 20px 60px;
+  }
+
+  h1 {
+    font-size: 1.7rem;
+  }
+}
 </style>
 
 </head>
 
 <body>
-
-<a href="index.html" class="back-link">← Mercedes de Luis Andrés</a>
-
 <main>
 
-<h1>Journalism</h1>
+<a class="back" href="index.html">← Mercedes de Luis Andrés</a>
 
-<div class="intro">
-Selected cultural journalism, essays, criticism and public dissemination.
+<h1>Writing</h1>
+
+<p class="intro">
+Essays, cultural criticism, interviews and travel writing.
+</p>
+
+<h2>ESSAYS &amp; CULTURAL CRITICISM</h2>
+
+<div class="item">
+  <div class="meta">2025</div>
+  <div class="title">
+    <a class="article-link" href="https://nordics.info/show/artikel/cultural-perceptions-of-denmark-in-spain" target="_blank">
+      Cultural perceptions of Denmark in Spain
+    </a>
+  </div>
+  <div class="source">Nordics.info</div>
 </div>
 
-<ul>
+<div class="item">
+  <div class="meta">2025</div>
+  <div class="title">Field Notes: Two Nordic Conferences Shed Light on Preserving Memories of the Past and Present</div>
+  <div class="source">NordMedia Network</div>
+</div>
 
-<li>
-2025 —
-<a href="https://nordics.info/show/artikel/cultural-perceptions-of-denmark-in-spain"
-class="article-link"
-target="_blank"
-rel="noopener noreferrer">
-Cultural perceptions of Denmark in Spain
-</a>.
-<span class="source">Nordics.info</span>
-</li>
+<div class="item">
+  <div class="meta">2024</div>
+  <div class="title">
+    <a class="article-link" href="https://sonograma.org/2024/01/alexander-wilfing-walking-in-the-steps-of-eduard-hanslick/" target="_blank">
+      Alexander Wilfing: walking in the steps of Eduard Hanslick
+    </a>
+  </div>
+  <div class="source">Sonograma Magazine</div>
+</div>
 
-<li>
-2025 —
-Field Notes: Two Nordic Conferences Shed Light on Preserving Memories of the Past and Present.
-<span class="source">NordMedia Network</span>
-</li>
+<div class="item">
+  <div class="meta">2023</div>
+  <div class="title">
+    <a class="article-link" href="https://sonograma.org/2023/04/the-sun-is-in-the-east/" target="_blank">
+      The sun is in the east: Rethinking cultural journalism
+    </a>
+  </div>
+  <div class="source">Sonograma Magazine</div>
+</div>
 
-<li>
-2024 —
-<a href="https://sonograma.org/2024/01/alexander-wilfing-walking-in-the-steps-of-eduard-hanslick/"
-class="article-link"
-target="_blank"
-rel="noopener noreferrer">
-Alexander Wilfing: walking in the steps of Eduard Hanslick
-</a>.
-<span class="source">Sonograma Magazine</span>
-</li>
+<div class="item">
+  <div class="meta">2022</div>
+  <div class="title">
+    <a class="article-link" href="https://nordmedianetwork.org/latest/news/researching-celebrities-in-digital-media-interview-with-helle-kannik-haastrup/" target="_blank">
+      Researching celebrities in digital media: Interview with Helle Kannik Haastrup
+    </a>
+  </div>
+  <div class="source">NordMedia Network</div>
+</div>
 
-<li>
-2023 —
-<a href="https://sonograma.org/2023/04/the-sun-is-in-the-east/"
-class="article-link"
-target="_blank"
-rel="noopener noreferrer">
-The sun is in the east: Rethinking cultural journalism
-</a>.
-<span class="source">Sonograma Magazine</span>
-</li>
+<div class="item">
+  <div class="meta">2022</div>
+  <div class="title">
+    <a class="article-link" href="https://nordmedianetwork.org/latest/news/travels-of-the-disciplinary-foreigner/" target="_blank">
+      Travels of a disciplinary foreigner
+    </a>
+  </div>
+  <div class="source">NordMedia Network</div>
+</div>
 
-<li>
-2022 —
-<a href="https://nordmedianetwork.org/latest/news/researching-celebrities-in-digital-media-interview-with-helle-kannik-haastrup/"
-class="article-link"
-target="_blank"
-rel="noopener noreferrer">
-Researching celebrities in digital media: Interview with Helle Kannik Haastrup
-</a>.
-<span class="source">NordMedia Network</span>
-</li>
+<div class="item">
+  <div class="meta">2020</div>
+  <div class="title">
+    <a class="article-link" href="https://revistadeletras.net/una-tarde-con-sir-john-h-elliot/" target="_blank">
+      Una tarde con Sir John H. Elliott
+    </a>
+  </div>
+  <div class="source">Revista de Letras</div>
+</div>
 
-<li>
-2022 —
-<a href="https://nordmedianetwork.org/latest/news/travels-of-the-disciplinary-foreigner/"
-class="article-link"
-target="_blank"
-rel="noopener noreferrer">
-Travels of a disciplinary foreigner
-</a>.
-<span class="source">NordMedia Network</span>
-</li>
+<div class="item">
+  <div class="meta">2020</div>
+  <div class="title">
+    <a class="article-link" href="http://cineclubcallemayor.blogspot.com/2020/04/panorama-nordico-por-mercedes-de-luis.html" target="_blank">
+      Panorama nórdico
+    </a>
+  </div>
+  <div class="source">Cine Club Calle Mayor · Cultural critique</div>
+</div>
 
-<li>
-2020 —
-<a href="https://revistadeletras.net/una-tarde-con-sir-john-h-elliot/"
-class="article-link"
-target="_blank"
-rel="noopener noreferrer">
-Una tarde con Sir John H. Elliott
-</a>.
-<span class="source">Revista de Letras</span>
-</li>
+<div class="item">
+  <div class="meta">2020</div>
+  <div class="title">
+    <a class="article-link" href="https://cineclubcallemayor.blogspot.com/2020/01/mas-apuntes-sobre-elephant-sitting.html" target="_blank">
+      An Elephant Sitting Still
+    </a>
+  </div>
+  <div class="source">Cine Club Calle Mayor · Film critique</div>
+</div>
 
-<li>
-2020 —
-<a href="http://cineclubcallemayor.blogspot.com/2020/04/panorama-nordico-por-mercedes-de-luis.html"
-class="article-link"
-target="_blank"
-rel="noopener noreferrer">
-Panorama nórdico
-</a>.
-<span class="source">Cine Club Calle Mayor · Cultural critique</span>
-</li>
+<div class="item">
+  <div class="meta">2019</div>
+  <div class="title">
+    <a class="article-link" href="http://cineclubcallemayor.blogspot.com/2019/11/ahlat-agac-nuri-bilge-ceylan-por.html" target="_blank">
+      Ahlat Ağacı de Nuri Bilge Ceylan
+    </a>
+  </div>
+  <div class="source">Cine Club Calle Mayor · Film critique</div>
+</div>
 
-<li>
-2020 —
-<a href="https://cineclubcallemayor.blogspot.com/2020/01/mas-apuntes-sobre-elephant-sitting.html"
-class="article-link"
-target="_blank"
-rel="noopener noreferrer">
-An Elephant Sitting Still
-</a>.
-<span class="source">Cine Club Calle Mayor · Film critique</span>
-</li>
+<div class="item">
+  <div class="meta">2018</div>
+  <div class="title">
+    <a class="article-link" href="http://modelo-nordico.es/downloads/realidad_e_interpretacion.pdf" target="_blank">
+      Realidad e interpretación
+    </a>
+  </div>
+  <div class="source">Modelo nórdico de la Sociedad de la Información · Essay</div>
+</div>
 
-<li>
-2019 —
-<a href="http://cineclubcallemayor.blogspot.com/2019/11/ahlat-agac-nuri-bilge-ceylan-por.html"
-class="article-link"
-target="_blank"
-rel="noopener noreferrer">
-Ahlat Ağacı de Nuri Bilge Ceylan
-</a>.
-<span class="source">Cine Club Calle Mayor · Film critique</span>
-</li>
+<div class="item">
+  <div class="meta">2018</div>
+  <div class="title">
+    <a class="article-link" href="https://www.lanuevacronica.com/nuevas-invasiones-en-bicicleta" target="_blank">
+      Nuevas invasiones en bicicleta
+    </a>
+  </div>
+  <div class="source">La Nueva Crónica</div>
+</div>
 
-<li>
-2018 —
-<a href="http://modelo-nordico.es/downloads/realidad_e_interpretacion.pdf"
-class="article-link"
-target="_blank"
-rel="noopener noreferrer">
-Realidad e interpretación
-</a>.
-<span class="source">Modelo nórdico de la Sociedad de la Información · Essay</span>
-</li>
+<h2>TRAVEL WRITING</h2>
 
-<li>
-2018 —
-<a href="https://www.lanuevacronica.com/nuevas-invasiones-en-bicicleta"
-class="article-link"
-target="_blank"
-rel="noopener noreferrer">
-Nuevas invasiones en bicicleta
-</a>.
-<span class="source">La Nueva Crónica</span>
-</li>
+<div class="item">
+  <div class="meta">2017</div>
+  <div class="title">
+    <a class="article-link" href="http://revistadeletras.net/tras-las-huellas-de-hans-christian-andersen-i/" target="_blank">
+      Tras las huellas de Hans Christian Andersen (I &amp; II)
+    </a>
+  </div>
+  <div class="source">Revista de Letras</div>
+</div>
 
-<li>
-2017 —
-<a href="http://revistadeletras.net/tras-las-huellas-de-hans-christian-andersen-i/"
-class="article-link"
-target="_blank"
-rel="noopener noreferrer">
-Tras las huellas de Hans Christian Andersen (I &amp; II)
-</a>.
-<span class="source">Revista de Letras</span>
-</li>
+<div class="item">
+  <div class="meta">2016</div>
+  <div class="title">
+    <a class="article-link" href="http://planet-bpm.eu/2016/05/11/berlin-mercedes-de-luis/" target="_blank">
+      BERLIN: I want to wake up in that city
+    </a>
+  </div>
+  <div class="source">Planet-Berlin Paris Madrid</div>
+</div>
 
-<li>
-2017 —
-<a href="http://www.tomajazz.com/perfiles/ploug_mikkel_2012.htm"
-class="article-link"
-target="_blank"
-rel="noopener noreferrer">
-Mikkel Ploug en primera persona
-</a>.
-<span class="source">Tomajazz</span>
-</li>
+<div class="item">
+  <div class="meta">2014</div>
+  <div class="title">At "El mirlo blanco"</div>
+  <div class="source">Romería Catoira · Cultural chronicle</div>
+</div>
 
-<li>
-2016 —
-<a href="http://planet-bpm.eu/2016/05/11/berlin-mercedes-de-luis/"
-class="article-link"
-target="_blank"
-rel="noopener noreferrer">
-BERLIN: I want to wake up in that city
-</a>.
-<span class="source">Planet-Berlin Paris Madrid</span>
-</li>
+<div class="item">
+  <div class="meta">2012</div>
+  <div class="title">
+    <a class="article-link" href="http://www.periodistadigital.com/guiacultural/ocio-y-cultura/2012/08/30/almas-perdidas-en-copenhague-opera-.shtml" target="_blank">
+      Almas perdidas en Copenhague
+    </a>
+  </div>
+  <div class="source">Periodista Digital · Guía Cultural</div>
+</div>
 
-<li>
-2014 —
-At "El mirlo blanco".
-<span class="source">Romería Catoira · Cultural chronicle</span>
-</li>
+<div class="item">
+  <div class="meta">2012</div>
+  <div class="title">
+    <a class="article-link" href="https://www.tomajazz.com/web/?p=4658" target="_blank">
+      Phronesis, Jazz House, Copenhague
+    </a>
+  </div>
+  <div class="source">Tomajazz · Concert review</div>
+</div>
 
-<li>
-2014 —
-<a href="http://www.lahuelladigital.com/dos-operas-en-nuremberg/"
-class="article-link"
-target="_blank"
-rel="noopener noreferrer">
-Dos óperas en Núremberg
-</a>.
-<span class="source">Revista La huella digital · Cultural critique</span>
-</li>
+<div class="item">
+  <div class="meta">2007</div>
+  <div class="title">
+    <a class="article-link" href="https://cafebabel.com/es/article/una-tarjeta-azul-para-arbitrar-la-europa-de-los-inmigrantes-5ae004fdf723b35a145dc8c8/" target="_blank">
+      Una tarjeta azul para arbitrar la Europa de los inmigrantes
+    </a>
+  </div>
+  <div class="source">Cafébabel</div>
+</div>
 
-<li>
-2012 —
-<a href="http://www.periodistadigital.com/guiacultural/ocio-y-cultura/2012/08/30/almas-perdidas-en-copenhague-opera-.shtml"
-class="article-link"
-target="_blank"
-rel="noopener noreferrer">
-Almas perdidas en Copenhague
-</a>.
-<span class="source">Periodista Digital · Guía Cultural · Cultural chronicle</span>
-</li>
+<h2>INTERVIEWS &amp; MUSIC WRITING</h2>
 
-<li>
-2012 —
-<a href="https://www.tomajazz.com/web/?p=4658"
-class="article-link"
-target="_blank"
-rel="noopener noreferrer">
-Phronesis, Jazz House, Copenhague
-</a>.
-<span class="source">Tomajazz · Concert review</span>
-</li>
+<div class="item">
+  <div class="meta">2017</div>
+  <div class="title">
+    <a class="article-link" href="http://www.tomajazz.com/perfiles/ploug_mikkel_2012.htm" target="_blank">
+      Mikkel Ploug en primera persona
+    </a>
+  </div>
+  <div class="source">Tomajazz</div>
+</div>
 
-<li>
-2007 —
-<a href="https://cafebabel.com/es/article/una-tarjeta-azul-para-arbitrar-la-europa-de-los-inmigrantes-5ae004fdf723b35a145dc8c8/"
-class="article-link"
-target="_blank"
-rel="noopener noreferrer">
-Una tarjeta azul para arbitrar la Europa de los inmigrantes
-</a>.
-<span class="source">Cafébabel</span>
-</li>
-
-</ul>
-
-</main>
+<div class="item">
+  <div class="meta">2014</div>
+  <div class="title">
+    <a class="article-link" href="http://www.lahuelladigital.com/dos-operas-en-nuremberg/" target="_blank">
+      Dos óperas en Núremberg
+    </a>
+  </div>
+  <div class="source">La Huella Digital · Cultural critique</div>
+</div>
 
 <footer>
-<p>Mercedes de Luis Andrés</p>
+Mercedes de Luis Andrés
 </footer>
 
+</main>
 </body>
 </html>
