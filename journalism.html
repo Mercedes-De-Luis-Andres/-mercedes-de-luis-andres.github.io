@@ -47,27 +47,55 @@
         }
 
         h1 {
-            font-size: 2rem;
+            font-size: 1.25rem;
             font-weight: normal;
             letter-spacing: -0.3px;
-            margin-bottom: 2.5rem;
-            border-bottom: 1px solid var(--line-color);
-            padding-bottom: 1rem;
+            margin-bottom: 0.3rem;
             line-height: 1.2;
         }
 
-        /* Contenido de periodismo se mantiene intacto */
-        .content-section {
+        .page-intro {
             font-size: 1rem;
+            color: var(--accent-color);
+            margin-bottom: 2.5rem;
+            font-style: italic;
+        }
+
+        .content-section {
+            border-top: 1px solid var(--line-color);
+            padding-top: 2rem;
+            margin-bottom: 3rem;
+            font-size: 0.95rem;
             color: #3b3b3b;
         }
 
-        footer {
-            border-top: 1px solid var(--line-color);
-            padding-top: 1.5rem;
-            font-size: 0.85rem;
+        .content-section h2 {
+            font-size: 0.95rem;
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
             color: var(--accent-color);
-            margin-top: 5rem;
+            margin-top: 2.5rem;
+            margin-bottom: 1.2rem;
+            font-weight: normal;
+        }
+
+        .content-section h2:first-of-type {
+            margin-top: 0;
+        }
+
+        .items-list {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .items-list li {
+            margin-bottom: 0.9rem;
+            line-height: 1.5;
+        }
+
+        .item-year {
+            color: var(--accent-color);
+            margin-right: 0.4rem;
         }
     </style>
 </head>
@@ -93,15 +121,31 @@
 
     <main>
         <h1>Journalism</h1>
+        <div class="page-intro">Selected cultural journalism, essays, criticism and public dissemination.</div>
 
         <div class="content-section">
-            <!-- Aquí conservas el contenido actual de tus artículos de periodismo -->
+            <ul class="items-list">
+                <li><span class="item-year">2025</span> — Cultural perceptions of Denmark in Spain, Nordics.info.</li>
+                <li><span class="item-year">2025</span> — Field Notes: Two Nordic Conferences Shed Light on Preserving Memories of the Past and Present, NordMedia Network.</li>
+                <li><span class="item-year">2024</span> — Alexander Wilfing: walking in the steps of Eduard Hanslick, Sonograma Magazine.</li>
+                <li><span class="item-year">2023</span> — The sun is in the east: Rethinking cultural journalism, Sonograma Magazine.</li>
+                <li><span class="item-year">2022</span> — Researching celebrities in digital media: Interview with Helle Kannik Haastrup, NordMedia Network.</li>
+                <li><span class="item-year">2022</span> — Travels of a disciplinary foreigner, NordMedia Network.</li>
+                <li><span class="item-year">2020</span> — Una tarde con Sir John H. Elliott, Revista de Letras.</li>
+                <li><span class="item-year">2018</span> — Realidad e interpretación, Modelo nórdico de la Sociedad de la Información.</li>
+                <li><span class="item-year">2018</span> — Nuevas invasiones en bicicleta, La Nueva Crónica.</li>
+                <li><span class="item-year">2017</span> — Tras las huellas de Hans Christian Andersen (I & II), Revista de Letras.</li>
+                <li><span class="item-year">2012</span> — Phronesis, Jazz House, Copenhague, Tomajazz.</li>
+                <li><span class="item-year">2007</span> — Una tarjeta azul para arbitrar la Europa de los inmigrantes, Cafébabel.</li>
+            </ul>
+
+            <h2>Awards & Grants</h2>
+            <ul class="items-list">
+                <li><span class="item-year">2009</span> — International Exchange Research Grant, University of Copenhagen.</li>
+                <li><span class="item-year">2008</span> — Winner, Essay Contest, Café Babel Berlin Magazine; Bosch Foundation, Berlin.</li>
+            </ul>
         </div>
     </main>
-
-    <footer>
-        <p>Mercedes de Luis Andrés</p>
-    </footer>
 
 </body>
 </html>
