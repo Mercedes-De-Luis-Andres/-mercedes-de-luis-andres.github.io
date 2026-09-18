@@ -3,230 +3,410 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="description"
+      content="Mercedes de Luis Andrés — Social Scientist, Lecturer, Essayist, Illustrator.">
+
 <title>Mercedes de Luis Andrés</title>
-<meta name="description" content="Mercedes de Luis Andrés — social scientist, lecturer, essayist and illustrator.">
+
 <style>
-:root{--text:#202020;--muted:#666;--line:#ddd;--bg:#fff;--link:#174a7e}
-*{box-sizing:border-box} html{scroll-behavior:smooth}
-body{margin:0;background:var(--bg);color:var(--text);font:16px/1.65 Georgia,serif}
-main{max-width:920px;margin:0 auto;padding:55px 28px 90px}
-header{padding-bottom:34px;border-bottom:1px solid var(--line)}
-h1{font-size:34px;font-weight:normal;margin:0 0 5px}
-.tagline{font-size:18px;color:var(--muted)}
-nav{margin-top:25px;display:flex;flex-wrap:wrap;gap:10px 22px;font:14px/1.4 Arial,sans-serif}
-a{color:var(--link);text-decoration:none} a:hover{text-decoration:underline}
-section{padding:42px 0;border-bottom:1px solid var(--line)}
-h2{font:22px/1.2 Arial,sans-serif;font-weight:normal;margin:0 0 20px}
-h3{font-size:18px;font-weight:normal;margin:28px 0 8px}
-p{margin:8px 0 15px}.intro{max-width:730px;font-size:18px}
-.item{margin:0 0 22px}.year{font-family:Arial,sans-serif;font-size:13px;color:var(--muted);font-weight:bold}
-ul{padding-left:22px}.contact{font-family:Arial,sans-serif;font-size:14px}
-footer{padding-top:25px;color:var(--muted);font:13px Arial,sans-serif}
-@media(max-width:600px){main{padding:35px 20px 60px}h1{font-size:29px}.intro{font-size:17px}}
+
+:root{
+  --bg:#faf9f6;
+  --ink:#242424;
+  --muted:#716d67;
+  --line:#ddd9d2;
+  --accent:#8a3f3f;
+  --max:940px;
+}
+
+*{
+  box-sizing:border-box;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--ink);
+  font-family:Georgia,"Times New Roman",serif;
+  line-height:1.65;
+}
+
+a{
+  color:inherit;
+  text-underline-offset:4px;
+}
+
+a:hover{
+  color:var(--accent);
+}
+
+header,
+main,
+footer{
+  max-width:var(--max);
+  margin:auto;
+  padding-left:28px;
+  padding-right:28px;
+}
+
+
+/* HEADER */
+
+header{
+  padding-top:78px;
+  padding-bottom:35px;
+}
+
+h1{
+  margin:0;
+  font-size:clamp(2.5rem,6vw,4.4rem);
+  font-weight:400;
+  letter-spacing:-.035em;
+  line-height:1;
+}
+
+.identity{
+  margin-top:18px;
+  margin-bottom:38px;
+  font-size:1.08rem;
+  color:var(--muted);
+  letter-spacing:.02em;
+}
+
+
+/* NAVIGATION */
+
+nav{
+  display:flex;
+  flex-wrap:wrap;
+  gap:9px 23px;
+  border-top:1px solid var(--line);
+  padding-top:17px;
+  font-size:.94rem;
+}
+
+nav a{
+  text-decoration:none;
+}
+
+
+/* SECTIONS */
+
+section{
+  padding-top:76px;
+}
+
+h2{
+  margin:0 0 32px;
+  font-size:1.65rem;
+  font-weight:400;
+  letter-spacing:-.02em;
+}
+
+
+/* ABOUT */
+
+.about-meta{
+  color:var(--muted);
+  margin-bottom:34px;
+}
+
+.about-lead{
+  max-width:790px;
+  font-size:1.3rem;
+  line-height:1.8;
+  margin:0;
+}
+
+.about-close{
+  max-width:700px;
+  font-size:1.17rem;
+  margin-top:28px;
+}
+
+
+/* PUBLICATIONS */
+
+.publications-intro{
+  margin-bottom:35px;
+  color:var(--muted);
+}
+
+.publication{
+  padding-bottom:25px;
+  margin-bottom:25px;
+  border-bottom:1px solid var(--line);
+}
+
+.publication:last-child{
+  border-bottom:0;
+}
+
+.publication-title{
+  font-size:1.1rem;
+  margin-bottom:5px;
+}
+
+.publication-details{
+  color:var(--muted);
+  font-size:.95rem;
+}
+
+.publication-link{
+  margin-top:7px;
+  font-size:.92rem;
+}
+
+.more{
+  margin-top:34px;
+  font-size:.98rem;
+}
+
+.more a{
+  text-decoration:none;
+  border-bottom:1px solid var(--ink);
+  padding-bottom:2px;
+}
+
+
+/* FOOTER */
+
+footer{
+  padding-top:42px;
+  padding-bottom:65px;
+  border-top:1px solid var(--line);
+  color:var(--muted);
+  font-size:.9rem;
+  margin-top:95px;
+}
+
+
+/* MOBILE */
+
+@media(max-width:700px){
+
+  header{
+    padding-top:50px;
+  }
+
+  section{
+    padding-top:58px;
+  }
+
+  nav{
+    gap:9px 16px;
+  }
+
+  .about-lead{
+    font-size:1.18rem;
+  }
+
+}
+
 </style>
 </head>
+
+
 <body>
-<main>
+
+
 <header>
-<h1>Mercedes de Luis Andrés</h1>
-<div class="tagline">Social Scientist &middot; Lecturer &middot; Essayist &middot; Illustrator</div>
-<nav>
-<a href="#about">About</a><a href="#research">Research &amp; Projects</a><a href="#publications">Publications</a>
-<a href="#talks">Talks</a><a href="#teaching">Teaching</a><a href="#journalism">Journalism</a>
-<a href="#creative">Creative work</a><a href="#awards">Grants &amp; Awards</a><a href="#contact">Contact</a>
-</nav>
+
+  <h1>Mercedes de Luis Andrés</h1>
+
+  <div class="identity">
+    Social Scientist · Lecturer · Essayist · Illustrator
+  </div>
+
+  <nav>
+    <a href="index.html">About</a>
+    <a href="projects.html">Projects</a>
+    <a href="publications.html">Publications</a>
+    <a href="talks.html">Talks</a>
+    <a href="teaching.html">Teaching</a>
+    <a href="essays.html">Essays &amp; Journalism</a>
+    <a href="wanderlust.html">Mercedes Wanderlust</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
 </header>
 
+
+
+<main>
+
+
+<!-- ABOUT -->
+
 <section id="about">
-<h2>About</h2>
-<p class="intro">Mercedes de Luis Andrés</p>
-<p><em>[1982]</em> &middot; <em>[Palencia, España]</em></p>
-<blockquote style="margin: 25px 0 10px 0; font-style: italic; border-left: 3px solid var(--line); padding-left: 15px;">
-<p>&ldquo;Caravana es mi patria y mi vida la más inesperada travesía.&rdquo;</p>
-</blockquote>
-<p style="font-size: 14px; color: var(--muted); margin-top: 0;">&mdash; Amin Maalouf, <em>León el Africano</em></p>
+
+  <h2>About</h2>
+
+  <div class="about-meta">
+    Primavera de 1982 · Palencia, España
+  </div>
+
+  <p class="about-lead">
+    He caminado entre los tejos de Tosande, he navegado hasta Atenas,
+    encontré un tesoro en la espuma de los días, he seguido las huellas
+    de los cíngaros, he publicado una poesía.
+  </p>
+
+  <p class="about-close">
+    Me interesa lo que ocurre en ese espacio donde se encuentran
+    la belleza y la bondad.
+  </p>
+
 </section>
 
-<section id="research">
-<h2>Research &amp; Projects</h2>
-<h3>Current and recent projects</h3>
 
-<div class="item">
-<div class="year">2026 &middot; Principal Investigator</div>
-<strong>SOCIAL SCIENCES | Book Clubs in Journalism Culture, Resilience &amp; Crisis</strong><br>
-<em>Austria &middot; University of Vienna</em><br>
-Research proposal developed and submitted within the WWTF Resilience &amp; Crisis framework, bringing together an interdisciplinary network across social sciences, health, education and environmental research.
-</div>
 
-<div class="item">
-<div class="year">2026 &middot; Project Designer &amp; Lead</div>
-<strong>HEALTH HUMANITIES | Applied Arts &amp; Fiction</strong><br>
-<em>Austria &middot; Klinikum Klagenfurt (KABEG)</em><br>
-Designed and led a non-evaluative intervention combining fiction, writing and art within a clinical setting. Project funded by KABEG.
-</div>
-
-<div class="item">
-<div class="year">2023–2026 &middot; Principal Investigator &amp; Project Designer</div>
-<strong>SOCIAL SCIENCES | BoJoClub: Book Clubs in Journalism Culture</strong><br>
-<em>Austria &middot; Vienna / Klagenfurt / International</em><br>
-Research and cultural project exploring reading communities, narrative journalism and memory through book-club methodologies, institutional collaborations and empirical pilot activities.
-</div>
-
-<div class="item">
-<div class="year">2024 &middot; Research Collaborator</div>
-<strong>DIGITAL HUMANITIES | Vom Musikalisch-Schönen</strong><br>
-<em>Austria &middot; Austrian Academy of Sciences (&Ouml;AW) / FWF</em><br>
-Research collaboration on Eduard Hanslick's criticism between aesthetics, journalism and scholarship, including transcription, TEI-XML encoding and linked open data.
-</div>
-
-<div class="item">
-<div class="year">2021 &middot; Co-Researcher</div>
-<strong>JOURNALISM | Reporting Under Pressure</strong><br>
-<em>Sweden &middot; DEMICOM, Mid Sweden University</em><br>
-North-South Europe research project examining working conditions and professional experiences of journalists during the COVID-19 pandemic.
-</div>
-
-<div class="item">
-<div class="year">2014 &middot; Cultural Researcher, Journalist &amp; Project Designer</div>
-<strong>JOURNALISM | Documenting Contemporary Danish Music</strong><br>
-<em>Denmark</em><br>
-Independent cultural research and fieldwork on contemporary Danish music, combining interviews, reporting, research and public dissemination.
-</div>
-
-<div class="item">
-<div class="year">2014 &middot; Cultural Researcher &amp; Journalist</div>
-<strong>JOURNALISM | Hans Christian Andersen in Spain &amp; Travel Diaries</strong><br>
-<em>Denmark / Spain</em><br>
-Archival and cultural research connecting Hans Christian Andersen's intellectual and literary networks with Spain, developed through research, interviews and narrative journalism.
-</div>
-
-<div class="item">
-<div class="year">2008 &middot; Radio Journalist &amp; Producer</div>
-<strong>RADIO &amp; PODCAST JOURNALISM | Current Affairs</strong><br>
-<em>Germany &middot; Berlin</em><br>
-Production and presentation of audio journalism addressing social, political and cultural affairs.
-</div>
-</section>
+<!-- SELECTED SCIENTIFIC PUBLICATIONS -->
 
 <section id="publications">
-<h2>Publications</h2>
-<p>Selected academic publications and scholarly outputs. A complete publication list can be maintained as a separate page or database.</p>
-<h3>Peer-reviewed journal articles</h3>
-<div class="item"><div class="year">2025</div><strong>Reading together at book clubs in journalism culture.</strong><br><em>Journal of Poetry Therapy, 38</em>(1), 1–15. <a href="https://doi.org/10.1080/08893675.2025.2540334">DOI</a></div>
-<div class="item"><div class="year">2025</div><strong>Journalism education: Reading between the lines.</strong><br><em>Journal of the Association for Journalism Education, 14</em>(1), 42–55.</div>
-<div class="item"><div class="year">2023</div><strong>Innovación en los métodos de investigación periodística: Entrevista con la periodista Audrey Travère.</strong><br><em>#PerDebate, 7</em>(1), 28–35. <a href="https://doi.org/10.18272/pd.v7i1.3087">DOI</a></div>
-<h3>Accepted / in press</h3>
-<div class="item"><strong>A book club at the local public radio.</strong><br><em>Journal of Alternative &amp; Community Media</em>. In press.</div>
-<div class="item"><strong>Take time: A comparative study of reading circles in Galway and Madrid.</strong><br><em>Journal of Franco-Irish Studies</em>. In press.</div>
-<h3>Book chapters</h3>
-<div class="item"><div class="year">2024</div><strong>Diario de Paz by Koleia Bungard, a book club in Colombian participatory journalism.</strong><br>In H. Aznar, S. Femenía, &amp; J. C. Suárez-Villegas (Eds.), <em>Social Communication and Vulnerability: International Contributions</em>, pp. 143–158. Tirant Humanidades.</div>
-<div class="item"><div class="year">2022</div><strong>Effects of journalism in public opinion in Nordic Countries: From Words to Action.</strong><br>In L. Nord &amp; K. Izarra (Eds.), <em>Challenges of the Digital Society in the Nordic Countries and Spain</em>, pp. 201–221. Fragua Editorial.</div>
-<h3>Research reports</h3>
-<div class="item"><div class="year">2022</div><strong>Reporting under pressure: A study of journalism working conditions in three European countries during the pandemic.</strong><br>DEMICOM Report Series No. 50, Mid Sweden University.</div>
+
+  <h2>Selected Scientific Publications</h2>
+
+  <p class="publications-intro">
+    Selected academic publications and scholarly outputs.
+  </p>
+
+
+  <div class="publication">
+
+    <div class="publication-title">
+      Reading together at book clubs in journalism culture.
+    </div>
+
+    <div class="publication-details">
+      2025 · <em>Journal of Poetry Therapy</em>, 38(1), 1–15
+    </div>
+
+    <div class="publication-link">
+      <a href="https://doi.org/10.1080/08893675.2025.2540334">
+        DOI
+      </a>
+    </div>
+
+  </div>
+
+
+
+  <div class="publication">
+
+    <div class="publication-title">
+      Journalism education: Reading between the lines.
+    </div>
+
+    <div class="publication-details">
+      2025 · <em>Journal of the Association for Journalism Education</em>,
+      14(1), 42–55
+    </div>
+
+    <div class="publication-link">
+      <a href="https://journalism-education.org/issue-14-1/">
+        Journal issue
+      </a>
+    </div>
+
+  </div>
+
+
+
+  <div class="publication">
+
+    <div class="publication-title">
+      Innovación en los métodos de investigación periodística:
+      Entrevista con la periodista Audrey Travère.
+    </div>
+
+    <div class="publication-details">
+      2023 · <em>#PerDebate</em>, 7(1), 28–35
+    </div>
+
+    <div class="publication-link">
+      <a href="https://doi.org/10.18272/pd.v7i1.3087">
+        DOI
+      </a>
+    </div>
+
+  </div>
+
+
+
+  <div class="publication">
+
+    <div class="publication-title">
+      Diario de Paz by Koleia Bungard, a book club in Colombian
+      participatory journalism.
+    </div>
+
+    <div class="publication-details">
+      2024 · In H. Aznar, S. Femenía, &amp; J. C. Suárez-Villegas (Eds.),
+      <em>Social Communication and Vulnerability: International Contributions</em>,
+      pp. 143–158 · Tirant Humanidades
+    </div>
+
+  </div>
+
+
+
+  <div class="publication">
+
+    <div class="publication-title">
+      Effects of journalism in public opinion in Nordic Countries:
+      From Words to Action.
+    </div>
+
+    <div class="publication-details">
+      2022 · In L. Nord &amp; K. Izarra (Eds.),
+      <em>Challenges of the Digital Society in the Nordic Countries and Spain</em>,
+      pp. 201–221 · Fragua Editorial
+    </div>
+
+  </div>
+
+
+
+  <div class="publication">
+
+    <div class="publication-title">
+      Reporting under pressure: A study of journalism working conditions
+      in three European countries during the pandemic.
+    </div>
+
+    <div class="publication-details">
+      2022 · DEMICOM Report Series No. 50 · Mid Sweden University
+    </div>
+
+  </div>
+
+
+
+  <p class="more">
+    <a href="publications.html">
+      View all publications →
+    </a>
+  </p>
+
 </section>
 
-<section id="talks">
-<h2>Talks &amp; Conferences</h2>
-<h3>Invited &amp; guest talks</h3>
-<ul>
-<li>2026 — <em>BojoClub and Communities of Interpretation</em>, Czech Academy of Sciences, Brno.</li>
-<li>2025 — <em>Creative process, documentation, drawing techniques, scientific research</em>, University of Galway.</li>
-<li>2024 — <em>BoJoClub – Book Clubs in Journalism Culture</em>, Austrian Academy of Sciences.</li>
-<li>2023 — <em>How screen reading affects the comprehension of journalistic narratives</em>, Brain Awareness Week.</li>
-<li>2023 — <em>Pay attention and listen: The role of journalistic interview in community education</em>, Tampere University.</li>
-</ul>
-<h3>Selected conference presentations</h3>
-<ul>
-<li>2026 — <em>Journalism education in transition</em>, AJE Annual Conference, City St George’s, University of London.</li>
-<li>2026 — <em>Minds, myths and machines – Rewiring the publishing industry</em>, By the Book 11, Johannes Gutenberg-Universität Mainz.</li>
-<li>2025 — <em>Journalism under pressure, reporting in authoritarian democracies</em>, Safety of Journalists Conference, OsloMet.</li>
-<li>2025 — <em>Beyond crisis and instability</em>, Memory Studies Association Conference, Charles University.</li>
-<li>2024 — <em>The art of conviviality</em>, Memory Studies Association Nordic Conference.</li>
-<li>2024 — <em>BoJoClubs: A comparative case study</em>, Safety of Journalists Conference, OsloMet.</li>
-<li>2024 — <em>Cartographic representation of BoJoClubs</em>, International Conference on Media Ethics.</li>
-<li>2024 — <em>Digital communications policies in Spanish and Danish public administrations</em>, University of Klagenfurt.</li>
-<li>2023 — <em>Environmental book clubs in journalism culture</em>, Safety of Journalists Conference, OsloMet.</li>
-<li>2023 — <em>Perspectives on media trust</em>, Sustainable Journalism Partnership Conference, University of Navarra.</li>
-<li>2023 — <em>Diario de Paz, the participatory reading club in local journalism</em>, International Conference on Media Ethics.</li>
-</ul>
-</section>
 
-<section id="teaching">
-<h2>Teaching</h2>
-<h3>University</h3>
-<ul>
-<li>2026–present — Masaryk University, Brno: <em>Visual Reporting: The Art of Journalism</em>.</li>
-<li>2023–2024 — University of Klagenfurt: <em>Visual Reporting; Travel Journalism</em>.</li>
-<li>2020–2021 — University of Burgos: <em>Written Journalism; Persuasive Communication</em>.</li>
-</ul>
-<h3>Other education</h3>
-<ul>
-<li>2026–present — Volkshochschule Vienna: Spanish-language reading circle (B1–C1).</li>
-<li>2026 — Sunday School of Humanities, Vienna: Project-Based Learning.</li>
-<li>2019 — IC Idiomas, Madrid: French &amp; English Instructor.</li>
-<li>2016–2017 — Rectorate of Lyon / Academy of Orléans-Tours: Spanish Language Teacher.</li>
-</ul>
-</section>
-
-<section id="journalism">
-<h2>Journalism &amp; Public Writing</h2>
-<p>Selected cultural journalism, essays, criticism and public dissemination.</p>
-<ul>
-<li>2025 — <em>Cultural perceptions of Denmark in Spain</em>, Nordics.info.</li>
-<li>2025 — <em>Field Notes: Two Nordic Conferences Shed Light on in Preserving Memories of the Past and Present</em>, NordMedia Network.</li>
-<li>2024 — <em>Alexander Wilfing: walking in the steps of Eduard Hanslick</em>, Sonograma Magazine.</li>
-<li>2023 — <em>The sun is in the east: Rethinking cultural journalism</em>, Sonograma Magazine.</li>
-<li>2022 — <em>Researching celebrities in digital media: Interview with Helle Kannik Haastrup</em>, NordMedia Network.</li>
-<li>2022 — <em>Travels of a disciplinary foreigner</em>, NordMedia Network.</li>
-<li>2020 — <em>Una tarde con Sir John H. Elliott</em>, Revista de Letras.</li>
-<li>2018 — <em>Realidad e interpretación</em>, Modelo nórdico de la Sociedad de la Información.</li>
-<li>2018 — <em>Nuevas invasiones en bicicleta</em>, La Nueva Crónica.</li>
-<li>2017 — <em>Tras las huellas de Hans Christian Andersen (I &amp; II)</em>, Revista de Letras.</li>
-<li>2012 — <em>Phronesis, Jazz House, Copenhague</em>, Tomajazz.</li>
-<li>2007 — <em>Una tarjeta azul para arbitrar la Europa de los inmigrantes</em>, Cafébabel.</li>
-</ul>
-</section>
-
-<section id="creative">
-<h2>Books, Film &amp; Drawing</h2>
-<div class="item"><div class="year">2021</div><strong>Lars Von Trier y el Dogma 95: viaje iniciático por la cultura danesa.</strong><br>Ediciones JC. ISBN 978-84-15448-52-5.</div>
-<div class="item"><div class="year">2019</div><strong>El legado vikingo.</strong><br>Spanish TV Documentary, RTVE.</div>
-<div class="item"><div class="year">2010</div><strong>Relatos de viaje.</strong><br>Hand-written and illustrated art-book series, 20 issues. Exhibited &amp; distributed at Panta Rhei Bookshop, Madrid.</div>
-<h3>Drawing exhibitions</h3>
-<ul>
-<li>2026 — <em>Light of Future Arts</em>, group exhibition, Hofburg Palace, Vienna.</li>
-<li>2025 — <em>Pharmakon</em>, solo exhibition, Apotheke an der Kettenbrückengasse, Vienna.</li>
-<li>2025 — <em>Carnet de Voyage</em>, group exhibition, UN Vienna.</li>
-<li>2017 — <em>Art of Journalism</em>, solo exhibition, Town Hall Library, Treviglio.</li>
-<li>2016–2017 — <em>Art of Journalism</em>, solo exhibition, Public Library of Palencia.</li>
-</ul>
-</section>
-
-<section id="awards">
-<h2>Grants &amp; Awards</h2>
-<ul>
-<li>2025 — Finalist, Three-Minute Talk on BoJoClub PhD, Falling Walls Foundation, Lab Austria.</li>
-<li>2025 — Erasmus Grant, Digital Society, University of Bologna.</li>
-<li>2024 — Visiting Research Fellowship, Amsterdam School of Cultural Analysis, University of Amsterdam; funded by the Austrian Academy of Sciences.</li>
-<li>2024 — Fellowship, Institute of Digital Humanities, Austrian Academy of Sciences.</li>
-<li>2023 — Outgoing Research &amp; Networking Grant, University of Klagenfurt.</li>
-<li>2023 — Förderungsstipendium, University of Klagenfurt.</li>
-<li>2019 — Research Award, Danish Film Directors Association.</li>
-<li>2009 — International Exchange Research Grant, University of Copenhagen.</li>
-<li>2008 — Winner, Essay Contest, Café Babel Berlin Magazine; Bosch Foundation, Berlin.</li>
-</ul>
-</section>
-
-<section id="contact">
-<h2>Contact</h2>
-<div class="contact">
-<p><strong>Email:</strong> <a href="mailto:mercedesdel@edu.aau.at">mercedesdel@edu.aau.at</a><br>
-<strong>ORCID:</strong> <a href="https://orcid.org/0000-0002-7141-2323">0000-0002-7141-2323</a><br>
-<strong>Portfolio:</strong> <a href="https://linktr.ee/mercedesdeluisandres">linktr.ee/mercedesdeluisandres</a></p>
-</div>
-</section>
-
-<footer>Mercedes de Luis Andrés · Personal academic website</footer>
 </main>
+
+
+
+<footer>
+
+  Mercedes de Luis Andrés · Personal website
+
+</footer>
+
+
 </body>
 </html>
