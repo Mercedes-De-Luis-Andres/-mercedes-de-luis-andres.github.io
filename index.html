@@ -1,358 +1,68 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mercedes de Luis Andrés</title>
-    <style>
-        :root {
-            --bg-color: #ffffff; /* Fondo blanco puro */
-            --text-color: #2b2b2b;
-            --accent-color: #7d6b5d; /* Tono tierra / gris cálido apagado */
-            --line-color: #e5e2dc;
-        }
+Quiero hacer ahora solo dos correcciones de diseño. No añadas todavía imágenes, dibujos ni nuevos elementos visuales.
 
-        html {
-            scroll-behavior: smooth; /* Desplazamiento suave al pulsar el menú */
-        }
+### 1. Crear una verdadera landing page en la parte superior
 
-        body {
-            font-family: Georgia, Cambria, "Times New Roman", Times, serif;
-            line-height: 1.6;
-            color: var(--text-color);
-            background-color: var(--bg-color);
-            max-width: 820px;
-            margin: 0 auto;
-            padding: 3rem 1.5rem;
-        }
+La versión actual es una página única larga, pero **no tiene una landing page diferenciada**.
 
-        header {
-            margin-bottom: 2.8rem;
-        }
+Quiero mantener todo en un único `index.html`, pero la parte superior debe funcionar claramente como una **landing / hero editorial**, separada visualmente del contenido que viene después.
 
-        .site-title {
-            font-size: 1.5rem;
-            font-weight: normal;
-            letter-spacing: -0.5px;
-            margin-bottom: 0.2rem;
-        }
+La landing debe presentar de forma limpia y con bastante presencia:
 
-        .site-title a {
-            color: var(--text-color);
-            text-decoration: none;
-        }
+**Mercedes de Luis Andrés**
 
-        .subtitle {
-            font-size: 0.95rem;
-            color: var(--accent-color);
-            margin-bottom: 1.2rem;
-            font-style: italic;
-        }
+*Social Scientist · Lecturer · Essayist · Painter*
 
-        nav {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 1.2rem;
-            font-size: 0.9rem;
-            border-bottom: 1px solid var(--line-color);
-            padding-bottom: 1rem;
-            margin-top: 1.2rem;
-        }
+y la frase:
 
-        nav a {
-            text-decoration: none;
-            color: var(--text-color);
-            transition: color 0.2s ease;
-        }
+“Me interesa lo que ocurre en ese espacio donde se encuentran la bondad y la belleza.”
 
-        nav a:hover {
-            color: var(--accent-color);
-            text-decoration: underline;
-        }
+seguida de:
 
-        section {
-            margin-bottom: 3.2rem;
-            padding-top: 0.5rem;
-        }
+“Amour véritable, Amitié durable,
+Et tout le reste au diable!”
 
-        h1, h2, h3 {
-            font-weight: normal;
-            color: var(--text-color);
-        }
+Después de esa introducción debe comenzar la página de contenido con:
 
-        h2 {
-            font-size: 1.3rem;
-            border-bottom: 1px solid var(--line-color);
-            padding-bottom: 0.4rem;
-            margin-top: 2.2rem;
-            margin-bottom: 1rem;
-        }
+**About**
+**Research & Projects**
+**Publications**
+**Talks & Conferences**
+**Teaching**
+**Journalism & Public Writing**
+**Mercedes Wanderlust**
+**Contact**
 
-        h3 {
-            font-size: 1.05rem;
-            margin-top: 1.5rem;
-            margin-bottom: 0.8rem;
-            color: var(--accent-color);
-        }
+La navegación debe seguir funcionando mediante anchors dentro del mismo `index.html`.
 
-        p {
-            margin-bottom: 1rem;
-        }
+La landing debe sentirse **editorial, intelectual, personal y minimalista**, no como una web corporativa ni como una plantilla de portfolio.
 
-        ul {
-            list-style-type: none;
-            padding-left: 0;
-        }
+No inventes contenido nuevo y no añadas imágenes todavía.
 
-        li {
-            margin-bottom: 0.8rem;
-        }
+### 2. Fondo blanco puro
 
-        .about-statement {
-            font-size: 1.15rem;
-            line-height: 1.6;
-            margin: 1.8rem 0;
-            color: #1f1f1f;
-        }
+Aunque el CSS ya contiene:
 
-        .quote {
-            font-style: italic;
-            margin: 1.8rem 0;
-            color: #4a4a4a;
-        }
+`--bg-color: #ffffff;`
 
-        .meta-info {
-            font-size: 0.9rem;
-            color: var(--accent-color);
-            margin-bottom: 1rem;
-        }
+quiero asegurarme de que **el resultado visual sea realmente blanco**, no marfil, crema, beige o sepia.
 
-        footer {
-            border-top: 1px solid var(--line-color);
-            padding-top: 1.5rem;
-            font-size: 0.85rem;
-            color: var(--accent-color);
-            text-align: left;
-            margin-top: 3.5rem;
-        }
+Mantén:
 
-        a {
-            color: var(--text-color);
-        }
+`--bg-color: #ffffff;`
 
-        a:hover {
-            color: var(--accent-color);
-        }
-    </style>
-</head>
-<body>
+y comprueba que ningún otro elemento esté aplicando un fondo diferente.
 
-    <header>
-        <h1 class="site-title"><a href="#about">Mercedes de Luis Andrés</a></h1>
-        <div class="subtitle">Social Scientist · Lecturer · Essayist · Painter</div>
-        
-        <nav>
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <a href="#publications">Publications</a>
-            <a href="#talks">Talks</a>
-            <a href="#teaching">Teaching</a>
-            <a href="#journalism">Journalism</a>
-            <a href="#wanderlust">Mercedes Wanderlust</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
+Mantén los demás colores actuales:
 
-    <main>
-        <!-- ABOUT -->
-        <section id="about">
-            <h2>About</h2>
-            <div class="meta-info">1982 · Palencia, España</div>
-            
-            <p class="about-statement">Me interesa lo que ocurre en ese espacio donde se encuentran la bondad y la belleza.</p>
-            
-            <div class="quote">
-                Amour véritable, Amitié durable,<br>
-                Et tout le reste au diable!
-            </div>
-        </section>
+`--text-color: #2b2b2b;`
+`--accent-color: #7d6b5d;`
+`--line-color: #e5e2dc;`
 
-        <!-- PROJECTS -->
-        <section id="projects">
-            <h2>Research & Projects</h2>
-            <h3>Current and recent projects</h3>
-            <ul>
-                <li><strong>2026 · Principal Investigator:</strong> SOCIAL SCIENCES — Book Clubs in Journalism Culture, Resilience & Crisis (Austria · University of Vienna). Research proposal developed and submitted within the WWTF Resilience & Crisis framework, bringing together an interdisciplinary network across social sciences, health, education and environmental research.</li>
-                <li><strong>2026 · Project Designer & Lead:</strong> HEALTH HUMANITIES — Applied Arts & Fiction (Austria · Klinikum Klagenfurt - KABEG). Designed and led a non-evaluative intervention combining reading, writing and art within a clinical setting. Project funded by KABEG.</li>
-                <li><strong>2023–2026 · Principal Investigator & Project Designer:</strong> SOCIAL SCIENCES — BoJoClub: Book Clubs in Journalism Culture (Austria · Vienna / Klagenfurt / International). Research and cultural project exploring reading practices, narrative journalism and memory through book-club methodologies, institutional collaborations and empirical pilot activities.</li>
-                <li><strong>2024 · Research Collaborator:</strong> DIGITAL HUMANITIES — Vom Musikalisch-Schönen (Austria · Austrian Academy of Sciences - ÖAW / FWF). Research collaboration on Eduard Hanslick's criticism between aesthetics, journalism and scholarship, including transcription, TEI-XML encoding and linked open data.</li>
-                <li><strong>2021 · Co-Researcher:</strong> JOURNALISM — Reporting Under Pressure (Sweden · DEMICOM, Mid Sweden University). Research project examining working conditions of journalists in Sweden, France and Spain during the COVID-19 pandemic.</li>
-                <li><strong>2014 · Cultural Researcher, Journalist & Project Designer:</strong> JOURNALISM — Documenting Contemporary Danish Music (Denmark). Independent cultural research and fieldwork on contemporary Danish music, combining interviews and public dissemination.</li>
-                <li><strong>2014 · Cultural Researcher & Journalist:</strong> JOURNALISM — Hans Christian Andersen in Spain & Travel Diaries (Denmark / Spain). Archival and cultural research connecting Hans Christian Andersen's intellectual and literary networks with Spain, developed through research, interviews and narrative journalism.</li>
-                <li><strong>2008 · Radio Journalist & Producer:</strong> RADIO & PODCAST JOURNALISM — Current Affairs (Germany · Berlin). Co-production and presentation of audio journalism addressing social, political and cultural affairs.</li>
-            </ul>
-        </section>
+### Importante
 
-        <!-- PUBLICATIONS -->
-        <section id="publications">
-            <h2>Publications</h2>
-            <p><em>Selected academic publications and scholarly outputs.</em></p>
-            
-            <h3>Forthcoming</h3>
-            <ul>
-                <li><strong>2026</strong> — Book Clubs and Mental Well-Being: A Journalistic Perspective. Peter Lang Publishers · Forthcoming</li>
-                <li><strong>2026</strong> — El Club de Lectura de El País: mediación y transformación periodística. #PerDebate · Forthcoming</li>
-                <li><strong>Forthcoming</strong> — A Book Club at the Local Public Radio. Journal of Alternative & Community Media</li>
-                <li><strong>Forthcoming</strong> — Take Time: A Comparative Study of Reading Circles in Galway and Madrid. Journal of Franco-Irish Studies</li>
-            </ul>
+No cambies ahora el contenido, las publicaciones, proyectos, talks, fellowships, teaching, journalism, awards & grants, Mercedes Wanderlust o contact.
 
-            <h3>Peer-reviewed journal articles</h3>
-            <ul>
-                <li><strong>2025</strong> — Reading together at book clubs in journalism culture. <em>Journal of Poetry Therapy</em>, 38(1), 1–15. <a href="https://doi.org/10.1080/09336618.2024.2442431" target="_blank" rel="noopener">DOI</a></li>
-                <li><strong>2025</strong> — Journalism education: Reading between the lines. <em>Journal of the Association for Journalism Education</em>, 14(1), 42–55.</li>
-                <li><strong>2023</strong> — Innovación en los métodos de investigación periodística: Entrevista con la periodista Audrey Travère. <em>#PerDebate</em>, 7(1), 28–35. <a href="https://doi.org/10.33732/perdebate.07.1.03" target="_blank" rel="noopener">DOI</a></li>
-            </ul>
+Tampoco añadas enlaces nuevos todavía.
 
-            <h3>Book chapters</h3>
-            <ul>
-                <li><strong>2024</strong> — Diario de Paz by Koleia Bungard, a book club in Colombian participatory journalism. In H. Aznar, S. Femenía, & J. C. Suárez-Villegas (Eds.), <em>Social Communication and Vulnerability: International Contributions</em>, pp. 143–158. Tirant Humanidades.</li>
-                <li><strong>2022</strong> — Effects of journalism in public opinion in Nordic Countries: From Words to Action. In L. Nord & K. Izarra (Eds.), <em>Challenges of the Digital Society in the Nordic Countries and Spain</em>, pp. 201–221. Fragua Editorial.</li>
-            </ul>
+Primero quiero ver correctamente **la landing + el fondo blanco + la estructura actual**.
 
-            <h3>Research reports</h3>
-            <ul>
-                <li><strong>2022</strong> — Reporting under pressure: A study of journalism working conditions in three European countries during the pandemic. DEMICOM Report Series No. 50, Mid Sweden University.</li>
-            </ul>
-        </section>
-
-        <!-- TALKS -->
-        <section id="talks">
-            <h2>Talks & Conferences</h2>
-            <h3>Invited & guest talks</h3>
-            <ul>
-                <li><strong>2026</strong> — BoJoClub and Communities of Interpretation, Czech Academy of Sciences, Brno.</li>
-                <li><strong>2025</strong> — Creative process, documentation, drawing techniques, scientific research, University of Galway.</li>
-                <li><strong>2025</strong> — Finalist, Three-Minute Talk on BoJoClub PhD, Falling Walls Foundation, Lab Austria.</li>
-                <li><strong>2024</strong> — BoJoClub – Book Clubs in Journalism Culture, Austrian Academy of Sciences.</li>
-                <li><strong>2023</strong> — How screen reading affects the comprehension of journalistic narratives, Brain Awareness Week.</li>
-                <li><strong>2023</strong> — Pay attention and listen: The role of journalistic interview in community education, Tampere University.</li>
-            </ul>
-
-            <h3>Conference Abstracts Accepted</h3>
-            <ul>
-                <li><strong>2026</strong> — Journalism education in transition, AJE Annual Conference, City St George’s, University of London.</li>
-                <li><strong>2026</strong> — Minds, myths and machines – Rewiring the publishing industry, By the Book 11, Johannes Gutenberg-Universität Mainz.</li>
-                <li><strong>2025</strong> — Journalism under pressure, reporting in authoritarian democracies, Safety of Journalists Conference, OsloMet.</li>
-                <li><strong>2025</strong> — Beyond crisis and instability, Memory Studies Association Conference, Charles University.</li>
-                <li><strong>2024</strong> — The art of conviviality, Memory Studies Association Nordic Conference.</li>
-                <li><strong>2024</strong> — BoJoClubs: A comparative case study, Safety of Journalists Conference, OsloMet.</li>
-                <li><strong>2024</strong> — Cartographic representation of BoJoClubs, International Conference on Media Ethics.</li>
-                <li><strong>2024</strong> — Digital communications policies in Spanish and Danish public administrations, University of Klagenfurt.</li>
-                <li><strong>2023</strong> — Environmental book clubs in journalism culture, Safety of Journalists Conference, OsloMet.</li>
-                <li><strong>2023</strong> — Perspectives on media trust, Sustainable Journalism Partnership Conference, University of Navarra.</li>
-                <li><strong>2023</strong> — Diario de Paz, the participatory reading club in local journalism, International Conference on Media Ethics.</li>
-            </ul>
-
-            <h3>Fellowships</h3>
-            <ul>
-                <li><strong>2023</strong> — Outgoing Research & Networking Grant, University of Klagenfurt.</li>
-                <li><strong>2023</strong> — Förderungsstipendium, University of Klagenfurt.</li>
-                <li><strong>2025</strong> — Erasmus Grant, Digital Society, University of Bologna.</li>
-                <li><strong>2024</strong> — Visiting Research Fellowship, Amsterdam School of Cultural Analysis, University of Amsterdam; funded by the Austrian Academy of Sciences.</li>
-                <li><strong>2024</strong> — Fellowship, Institute of Digital Humanities, Austrian Academy of Sciences.</li>
-            </ul>
-        </section>
-
-        <!-- TEACHING -->
-        <section id="teaching">
-            <h2>Teaching</h2>
-            <h3>University</h3>
-            <ul>
-                <li><strong>2026–present</strong> — Masaryk University, Brno: Visual Reporting: The Art of Journalism.</li>
-                <li><strong>2023–2024</strong> — University of Klagenfurt: Visual Reporting; Travel Journalism.</li>
-                <li><strong>2020–2021</strong> — University of Burgos: Written Journalism; Persuasive Communication.</li>
-            </ul>
-
-            <h3>High School and Adult education</h3>
-            <ul>
-                <li><strong>2026–present</strong> — Volkshochschule Vienna: Spanish-language reading circle (B1–C1).</li>
-                <li><strong>2026</strong> — Sunday School of Humanities, Vienna: Project-Based Learning.</li>
-                <li><strong>2019</strong> — IC Idiomas, Madrid: French & English Instructor.</li>
-                <li><strong>2016–2017</strong> — Rectorate of Lyon / Academy of Orléans-Tours: Spanish Language Teacher.</li>
-            </ul>
-        </section>
-
-        <!-- JOURNALISM -->
-        <section id="journalism">
-            <h2>Journalism & Public Writing</h2>
-            <p><em>Selected cultural journalism, essays, criticism and public dissemination.</em></p>
-            <ul>
-                <li><strong>2025</strong> — Cultural perceptions of Denmark in Spain, <em>Nordics.info</em>.</li>
-                <li><strong>2025</strong> — Field Notes: Two Nordic Conferences Shed Light on Preserving Memories of the Past and Present, <em>NordMedia Network</em>.</li>
-                <li><strong>2024</strong> — Alexander Wilfing: walking in the steps of Eduard Hanslick, <em>Sonograma Magazine</em>.</li>
-                <li><strong>2023</strong> — The sun is in the east: Rethinking cultural journalism, <em>Sonograma Magazine</em>.</li>
-                <li><strong>2022</strong> — Researching celebrities in digital media: Interview with Helle Kannik Haastrup, <em>NordMedia Network</em>.</li>
-                <li><strong>2022</strong> — Travels of a disciplinary foreigner, <em>NordMedia Network</em>.</li>
-                <li><strong>2020</strong> — Una tarde con Sir John H. Elliott, <em>Revista de Letras</em>.</li>
-                <li><strong>2018</strong> — Realidad e interpretación, Modelo nórdico de la Sociedad de la Información.</li>
-                <li><strong>2018</strong> — Nuevas invasiones en bicicleta, <em>La Nueva Crónica</em>.</li>
-                <li><strong>2017</strong> — Tras las huellas de Hans Christian Andersen (I & II), <em>Revista de Letras</em>.</li>
-                <li><strong>2012</strong> — Phronesis, Jazz House, Copenhague, <em>Tomajazz</em>.</li>
-                <li><strong>2007</strong> — Una tarjeta azul para arbitrar la Europa de los inmigrantes, <em>Cafébabel</em>.</li>
-            </ul>
-
-            <h3>Awards & Grants</h3>
-            <ul>
-                <li><strong>2009</strong> — International Exchange Research Grant, University of Copenhagen.</li>
-                <li><strong>2008</strong> — Winner, Essay Contest, Café Babel Berlin Magazine; Bosch Foundation, Berlin.</li>
-            </ul>
-        </section>
-
-        <!-- MERCEDES WANDERLUST -->
-        <section id="wanderlust">
-            <h2>Mercedes Wanderlust</h2>
-
-            <h3>Books & Film</h3>
-            <ul>
-                <li>
-                    <strong>2021</strong> — <em>Lars Von Trier y el Dogma 95: viaje iniciático por la cultura danesa.</em> 
-                    Ediciones JC. ISBN 978-84-15448-52-5.
-                </li>
-                <li>
-                    <strong>2019</strong> — Research Award, Danish Film Directors Association.
-                </li>
-                <li>
-                    <strong>2019</strong> — <em>El legado vikingo.</em> 
-                    Spanish TV Documentary, RTVE.
-                </li>
-                <li>
-                    <strong>2010</strong> — <em>Relatos de viaje.</em> 
-                    Hand-written and illustrated art-book series, 20 issues. Exhibited & distributed at Panta Rhei Bookshop, Madrid.
-                </li>
-            </ul>
-
-            <h3>Drawing Exhibitions</h3>
-            <ul>
-                <li><strong>2026</strong> — Light of Future Arts, group exhibition, Hofburg Palace, Vienna.</li>
-                <li><strong>2025</strong> — Pharmakon, solo exhibition, Apotheke an der Kettenbrückengasse, Vienna.</li>
-                <li><strong>2025</strong> — Carnet de Voyage, group exhibition, UN Vienna.</li>
-                <li><strong>2017</strong> — Art of Journalism, solo exhibition, Town Hall Library, Treviglio.</li>
-                <li><strong>2016–2017</strong> — Art of Journalism, solo exhibition, Public Library of Palencia.</li>
-            </ul>
-        </section>
-
-        <!-- CONTACT -->
-        <section id="contact">
-            <h2>Contact</h2>
-            <p><strong>Email:</strong> <a href="mailto:mercedesdel@edu.aau.at">mercedesdel@edu.aau.at</a></p>
-            <p><strong>ORCID:</strong> <a href="https://orcid.org/0000-0002-7141-2323" target="_blank" rel="noopener">0000-0002-7141-2323</a></p>
-            <p><strong>Portfolio:</strong> <a href="https://linktr.ee/mercedesdeluisandres" target="_blank" rel="noopener">linktr.ee/mercedesdeluisandres</a></p>
-        </section>
-    </main>
-
-    <footer>
-        <p>Mercedes de Luis Andrés</p>
-    </footer>
-
-</body>
-</html>
