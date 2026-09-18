@@ -1,281 +1,287 @@
-```html
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Mercedes de Luis Andrés</title>
+```
+<title>Mercedes de Luis Andrés</title>
 
-    <style>
-        :root {
-            --bg-color: #ffffff;
-            --text-color: #2b2b2b;
-            --accent-color: #7d6b5d;
-            --line-color: #e5e2dc;
-        }
+<style>
+    :root {
+        --bg-color: #ffffff;
+        --text-color: #2b2b2b;
+        --accent-color: #7d6b5d;
+        --line-color: #e5e2dc;
+    }
 
-        * {
-            box-sizing: border-box;
-        }
+    * {
+        box-sizing: border-box;
+    }
 
-        body {
-            margin: 0;
-            background: var(--bg-color);
-            color: var(--text-color);
-            font-family: Georgia, Cambria, "Times New Roman", serif;
-            line-height: 1.6;
-        }
+    body {
+        margin: 0;
+        background: var(--bg-color);
+        color: var(--text-color);
+        font-family: Georgia, Cambria, "Times New Roman", serif;
+        line-height: 1.6;
+    }
 
+    .container {
+        max-width: 720px;
+        margin: 0 auto;
+        padding: 45px 25px 55px;
+    }
+
+    nav {
+        border-bottom: 1px solid var(--line-color);
+        padding-bottom: 18px;
+        margin-bottom: 55px;
+        font-size: 0.88rem;
+        text-align: center;
+    }
+
+    nav a {
+        color: var(--text-color);
+        text-decoration: none;
+        margin: 0 5px;
+    }
+
+    nav a:hover {
+        color: var(--accent-color);
+    }
+
+    .intro {
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 1.55rem;
+        font-weight: normal;
+        margin: 0 0 35px;
+        letter-spacing: 0.01em;
+    }
+
+    .quote {
+        font-size: 1.05rem;
+        font-style: italic;
+        line-height: 1.8;
+        margin: 0 auto 35px;
+    }
+
+    .profile-image-container {
+        margin: 0 auto 55px;
+        max-width: 340px;
+    }
+
+    .profile-image-container img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    .updates {
+        border-top: 1px solid var(--line-color);
+        padding-top: 28px;
+        text-align: left;
+    }
+
+    .updates h2 {
+        font-size: 0.82rem;
+        font-weight: normal;
+        text-transform: uppercase;
+        letter-spacing: 0.12em;
+        color: var(--accent-color);
+        margin: 0 0 25px;
+    }
+
+    .update {
+        margin-bottom: 20px;
+    }
+
+    .update:last-child {
+        margin-bottom: 0;
+    }
+
+    .update-year {
+        font-size: 0.78rem;
+        color: var(--accent-color);
+        margin-right: 6px;
+    }
+
+    .update-title {
+        font-size: 0.94rem;
+    }
+
+    .update-source {
+        display: block;
+        margin-top: 2px;
+        font-size: 0.82rem;
+        color: #777;
+    }
+
+    .personal-links {
+        margin-top: 55px;
+        padding-top: 22px;
+        border-top: 1px solid var(--line-color);
+        text-align: center;
+        font-size: 0.84rem;
+    }
+
+    .personal-links a {
+        color: var(--text-color);
+        text-decoration: none;
+        margin: 0 7px;
+    }
+
+    .personal-links a:hover {
+        color: var(--accent-color);
+    }
+
+    @media (max-width: 600px) {
         .container {
-            max-width: 720px;
-            margin: 0 auto;
-            padding: 45px 25px 55px;
+            padding: 30px 20px 45px;
         }
 
         nav {
-            border-bottom: 1px solid var(--line-color);
-            padding-bottom: 18px;
-            margin-bottom: 55px;
-            font-size: 0.88rem;
-            text-align: center;
+            line-height: 2;
+            margin-bottom: 45px;
         }
 
         nav a {
-            color: var(--text-color);
-            text-decoration: none;
-            margin: 0 5px;
-        }
-
-        nav a:hover {
-            color: var(--accent-color);
-        }
-
-        .intro {
-            text-align: center;
+            margin: 0 3px;
         }
 
         h1 {
-            font-size: 1.55rem;
-            font-weight: normal;
-            margin: 0 0 35px;
-            letter-spacing: 0.01em;
-        }
-
-        .quote {
-            font-size: 1.05rem;
-            font-style: italic;
-            line-height: 1.8;
-            margin: 0 auto 35px;
+            font-size: 1.4rem;
         }
 
         .profile-image-container {
-            margin: 0 auto 55px;
-            max-width: 340px;
+            max-width: 100%;
+            margin-bottom: 45px;
         }
+    }
+</style>
+```
 
-        .profile-image-container img {
-            display: block;
-            width: 100%;
-            height: auto;
-        }
-
-        .updates {
-            border-top: 1px solid var(--line-color);
-            padding-top: 28px;
-            text-align: left;
-        }
-
-        .updates h2 {
-            font-size: 0.82rem;
-            font-weight: normal;
-            text-transform: uppercase;
-            letter-spacing: 0.12em;
-            color: var(--accent-color);
-            margin: 0 0 25px;
-        }
-
-        .update {
-            margin-bottom: 20px;
-        }
-
-        .update:last-child {
-            margin-bottom: 0;
-        }
-
-        .update-year {
-            font-size: 0.78rem;
-            color: var(--accent-color);
-            margin-right: 6px;
-        }
-
-        .update-title {
-            font-size: 0.94rem;
-        }
-
-        .update-source {
-            display: block;
-            margin-top: 2px;
-            font-size: 0.82rem;
-            color: #777;
-        }
-
-        .personal-links {
-            margin-top: 55px;
-            padding-top: 22px;
-            border-top: 1px solid var(--line-color);
-            text-align: center;
-            font-size: 0.84rem;
-        }
-
-        .personal-links a {
-            color: var(--text-color);
-            text-decoration: none;
-            margin: 0 7px;
-        }
-
-        .personal-links a:hover {
-            color: var(--accent-color);
-        }
-
-        @media (max-width: 600px) {
-            .container {
-                padding: 30px 20px 45px;
-            }
-
-            nav {
-                line-height: 2;
-                margin-bottom: 45px;
-            }
-
-            nav a {
-                margin: 0 3px;
-            }
-
-            h1 {
-                font-size: 1.4rem;
-            }
-
-            .profile-image-container {
-                max-width: 100%;
-                margin-bottom: 45px;
-            }
-        }
-    </style>
 </head>
 
 <body>
 
 <div class="container">
 
-    <nav>
-        <a href="projects.html">Projects</a> ·
-        <a href="publications.html">Publications</a> ·
-        <a href="talks.html">Talks &amp; Conferences</a> ·
-        <a href="teaching.html">Teaching</a> ·
-        <a href="journalism.html">Journalism</a> ·
-        <a href="wanderlust.html">Mercedes Wanderlust</a> ·
-        <a href="contact.html">Contact</a>
-    </nav>
+```
+<nav>
+    <a href="projects.html">Projects</a> ·
+    <a href="publications.html">Publications</a> ·
+    <a href="talks.html">Talks &amp; Conferences</a> ·
+    <a href="teaching.html">Teaching</a> ·
+    <a href="journalism.html">Journalism</a> ·
+    <a href="wanderlust.html">Mercedes Wanderlust</a> ·
+    <a href="contact.html">Contact</a>
+</nav>
 
-    <main>
+<main>
 
-        <section class="intro">
+    <section class="intro">
 
-            <h1>Mercedes de Luis Andrés</h1>
+        <h1>Mercedes de Luis Andrés</h1>
 
-            <div class="quote">
-                Amour véritable, Amitié durable,<br>
-                Et tout le reste au diable!
-            </div>
-
-            <div class="profile-image-container">
-                <img src="Mercedes%20de%20Luis%20Andrés.jpg"
-                     alt="Mercedes de Luis Andrés">
-            </div>
-
-        </section>
-
-        <section class="updates">
-
-            <h2>Latest Updates</h2>
-
-            <div class="update">
-                <span class="update-year">2025</span>
-                <span class="update-title">
-                    Cultural perceptions of Denmark in Spain
-                </span>
-                <span class="update-source">
-                    Nordics.info
-                </span>
-            </div>
-
-            <div class="update">
-                <span class="update-year">2025</span>
-                <span class="update-title">
-                    Field Notes: Two Nordic Conferences Shed Light on Preserving Memories of the Past and Present
-                </span>
-                <span class="update-source">
-                    NordMedia Network
-                </span>
-            </div>
-
-            <div class="update">
-                <span class="update-year">2024</span>
-                <span class="update-title">
-                    Alexander Wilfing: walking in the steps of Eduard Hanslick
-                </span>
-                <span class="update-source">
-                    Sonograma Magazine
-                </span>
-            </div>
-
-            <div class="update">
-                <span class="update-year">2023</span>
-                <span class="update-title">
-                    The sun is in the east: Rethinking cultural journalism
-                </span>
-                <span class="update-source">
-                    Sonograma Magazine
-                </span>
-            </div>
-
-            <div class="update">
-                <span class="update-year">2022</span>
-                <span class="update-title">
-                    Researching celebrities in digital media: Interview with Helle Kannik Haastrup
-                </span>
-                <span class="update-source">
-                    NordMedia Network
-                </span>
-            </div>
-
-        </section>
-
-        <div class="personal-links">
-            <a href="https://www.linkedin.com/in/mercedesdeluisandres/"
-               target="_blank"
-               rel="noopener noreferrer">LinkedIn</a> ·
-
-            <a href="https://www.instagram.com/mercedesdeluisandres/"
-               target="_blank"
-               rel="noopener noreferrer">Instagram</a> ·
-
-            <a href="https://orcid.org/0000-0002-7141-2323"
-               target="_blank"
-               rel="noopener noreferrer">ORCID</a> ·
-
-            <a href="https://linktr.ee/mercedesdeluisandres"
-               target="_blank"
-               rel="noopener noreferrer">Linktree</a> ·
-
-            <a href="mailto:mercedesdel@edu.aau.at">Email</a>
+        <div class="quote">
+            Amour véritable, Amitié durable,<br>
+            Et tout le reste au diable!
         </div>
 
-    </main>
+        <div class="profile-image-container">
+            <img src="Mercedes%20de%20Luis%20Andr%C3%A9s.jpg"
+                 alt="Mercedes de Luis Andrés">
+        </div>
+
+    </section>
+
+    <section class="updates">
+
+        <h2>Latest Updates</h2>
+
+        <div class="update">
+            <span class="update-year">2025</span>
+            <span class="update-title">
+                Cultural perceptions of Denmark in Spain
+            </span>
+            <span class="update-source">
+                Nordics.info
+            </span>
+        </div>
+
+        <div class="update">
+            <span class="update-year">2025</span>
+            <span class="update-title">
+                Field Notes: Two Nordic Conferences Shed Light on Preserving Memories of the Past and Present
+            </span>
+            <span class="update-source">
+                NordMedia Network
+            </span>
+        </div>
+
+        <div class="update">
+            <span class="update-year">2024</span>
+            <span class="update-title">
+                Alexander Wilfing: walking in the steps of Eduard Hanslick
+            </span>
+            <span class="update-source">
+                Sonograma Magazine
+            </span>
+        </div>
+
+        <div class="update">
+            <span class="update-year">2023</span>
+            <span class="update-title">
+                The sun is in the east: Rethinking cultural journalism
+            </span>
+            <span class="update-source">
+                Sonograma Magazine
+            </span>
+        </div>
+
+        <div class="update">
+            <span class="update-year">2022</span>
+            <span class="update-title">
+                Researching celebrities in digital media: Interview with Helle Kannik Haastrup
+            </span>
+            <span class="update-source">
+                NordMedia Network
+            </span>
+        </div>
+
+    </section>
+
+    <div class="personal-links">
+
+        <a href="https://www.linkedin.com/in/mercedesdeluisandres/"
+           target="_blank"
+           rel="noopener noreferrer">LinkedIn</a> ·
+
+        <a href="https://www.instagram.com/mercedesdeluisandres/"
+           target="_blank"
+           rel="noopener noreferrer">Instagram</a> ·
+
+        <a href="https://orcid.org/0000-0002-7141-2323"
+           target="_blank"
+           rel="noopener noreferrer">ORCID</a> ·
+
+        <a href="https://linktr.ee/mercedesdeluisandres"
+           target="_blank"
+           rel="noopener noreferrer">Linktree</a> ·
+
+        <a href="mailto:mercedesdel@edu.aau.at">Email</a>
+
+    </div>
+
+</main>
+```
 
 </div>
 
 </body>
 </html>
-```
