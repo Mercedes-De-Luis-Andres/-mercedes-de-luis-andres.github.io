@@ -1,251 +1,323 @@
 <!DOCTYPE html>
 
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects · Mercedes de Luis Andrés</title>
-    <style>
-        :root {
-            --bg-color: #ffffff;
-            --text-color: #2b2b2b;
-            --accent-color: #7d6b5d;
-            --line-color: #e5e2dc;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects · Mercedes de Luis Andrés</title>
 
-```
-    body {
-        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
-        line-height: 1.6;
-        color: var(--text-color);
-        background-color: var(--bg-color);
-        max-width: 720px;
-        margin: 0 auto;
-        padding: 3rem 1.5rem;
-    }
+<style>
+:root {
+    --bg-color: #ffffff;
+    --text-color: #2b2b2b;
+    --accent-color: #7d6b5d;
+    --line-color: #e5e2dc;
+}
 
-    nav.site-nav {
-        font-size: 0.85rem;
-        color: var(--accent-color);
-        margin-bottom: 3.5rem;
-        line-height: 1.8;
-    }
+body {
+    font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 4rem 1.5rem;
+}
 
-    nav.site-nav a {
-        text-decoration: none;
-        color: var(--accent-color);
-        transition: color 0.2s ease;
-    }
+.back-link {
+    font-size: 0.95rem;
+    text-decoration: none;
+    color: var(--accent-color);
+    display: inline-block;
+    margin-bottom: 2.5rem;
+    transition: color 0.2s ease;
+}
 
-    nav.site-nav a:hover,
-    nav.site-nav a.active {
-        color: var(--text-color);
-        text-decoration: underline;
-    }
+.back-link:hover {
+    color: var(--text-color);
+}
 
-    .nav-separator {
-        margin: 0 0.4rem;
-        color: #ccc;
-    }
+h1 {
+    font-size: 2rem;
+    font-weight: normal;
+    letter-spacing: -0.5px;
+    margin-bottom: 0.8rem;
+}
 
-    h1 {
-        font-size: 2rem;
-        font-weight: normal;
-        letter-spacing: -0.3px;
-        margin-bottom: 2.5rem;
-        border-bottom: 1px solid var(--line-color);
-        padding-bottom: 1rem;
-        line-height: 1.2;
-    }
+.intro {
+    font-style: italic;
+    color: var(--accent-color);
+    margin-bottom: 2.5rem;
+    border-bottom: 1px solid var(--line-color);
+    padding-bottom: 1rem;
+}
 
-    ul {
-        list-style-type: none;
-        padding-left: 0;
-    }
+h2 {
+    font-size: 1.2rem;
+    font-weight: normal;
+    color: var(--accent-color);
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
 
-    li {
-        margin-bottom: 2.5rem;
-    }
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
 
-    .project-meta {
-        font-size: 0.9rem;
-        color: var(--accent-color);
-        margin-bottom: 0.3rem;
-        text-transform: uppercase;
-        letter-spacing: 0.5px;
-    }
+li {
+    margin-bottom: 1.8rem;
+    font-size: 1rem;
+}
 
-    .project-title {
-        font-size: 1.1rem;
-        font-weight: bold;
-        margin-bottom: 0.3rem;
-        color: var(--text-color);
-    }
+.project-meta {
+    color: var(--accent-color);
+    font-size: 0.95rem;
+    margin-bottom: 0.2rem;
+}
 
-    .project-title a {
-        color: inherit;
-        text-decoration: none;
-        border-bottom: 1px solid var(--line-color);
-        transition: border-color 0.2s ease, color 0.2s ease;
-    }
+.project-title {
+    font-size: 1.05rem;
+    margin-bottom: 0.2rem;
+}
 
-    .project-title a:hover {
-        color: var(--accent-color);
-        border-bottom-color: var(--accent-color);
-    }
+.project-place {
+    font-style: italic;
+    margin-bottom: 0.6rem;
+}
 
-    .project-location {
-        font-size: 0.95rem;
-        font-style: italic;
-        color: var(--accent-color);
-        margin-bottom: 0.5rem;
-    }
+.project-description {
+    margin: 0;
+}
 
-    .project-desc {
-        font-size: 1rem;
-        color: #3b3b3b;
-    }
+.project-link {
+    color: inherit;
+    text-decoration: none;
+}
 
-    footer {
-        border-top: 1px solid var(--line-color);
-        padding-top: 1.5rem;
-        font-size: 0.85rem;
-        color: var(--accent-color);
-        margin-top: 5rem;
-    }
+.project-link:hover {
+    color: var(--accent-color);
+}
+
+footer {
+    border-top: 1px solid var(--line-color);
+    padding-top: 1.5rem;
+    font-size: 0.85rem;
+    color: var(--accent-color);
+    margin-top: 5rem;
+}
 </style>
-```
 
 </head>
+
 <body>
 
-```
-<nav class="site-nav">
-    <a href="index.html">← Portada</a>
-    <span class="nav-separator">·</span>
-    <a href="projects.html" class="active">Projects</a>
-    <span class="nav-separator">·</span>
-    <a href="publications.html">Publications</a>
-    <span class="nav-separator">·</span>
-    <a href="talks.html">Talks & Conferences</a>
-    <span class="nav-separator">·</span>
-    <a href="teaching.html">Teaching</a>
-    <span class="nav-separator">·</span>
-    <a href="journalism.html">Journalism</a>
-    <span class="nav-separator">·</span>
-    <a href="wanderlust.html">Mercedes Wanderlust</a>
-    <span class="nav-separator">·</span>
-    <a href="contact.html">Contact</a>
-</nav>
+<a href="index.html" class="back-link">← Mercedes de Luis Andrés</a>
 
 <main>
-    <h1>Projects</h1>
 
-    <ul>
+<h1>Projects</h1>
 
-        <li>
-            <div class="project-meta">2026 · Principal Investigator · Under revision</div>
-            <div class="project-title">SOCIAL SCIENCES | Book Clubs in Journalism Culture, Resilience & Crisis</div>
-            <div class="project-location">Austria · University of Vienna</div>
-            <div class="project-desc">
-                Research proposal developed and submitted within the WWTF Resilience & Crisis framework, bringing together an interdisciplinary network across social sciences, health, education and environmental research.
-            </div>
-        </li>
+<div class="intro">
+Research projects, collaborations and independent cultural work.
+</div>
 
-        <li>
-            <div class="project-meta">2026 · Project Designer & Lead</div>
-            <div class="project-title">HEALTH HUMANITIES | Applied Arts & Fiction</div>
-            <div class="project-location">Austria · Klinikum Klagenfurt (KABEG)</div>
-            <div class="project-desc">
-                Designed and led a non-evaluative intervention combining reading, writing and art within a clinical setting. Project funded by KABEG.
-            </div>
-        </li>
+<ul>
 
-        <li>
-            <div class="project-meta">2023–2026 · Principal Investigator & Project Designer</div>
-            <div class="project-title">
-                <a href="https://bojoclub.hypotheses.org" target="_blank" rel="noopener noreferrer">
-                    SOCIAL SCIENCES | BoJoClub: Book Clubs in Journalism Culture
-                </a>
-            </div>
-            <div class="project-location">Austria · Vienna / Klagenfurt / International</div>
-            <div class="project-desc">
-                Research and cultural project exploring reading practices, narrative journalism and memory through book-club methodologies, institutional collaborations and empirical pilot activities.
-            </div>
-        </li>
+<li>
 
-        <li>
-            <div class="project-meta">2024 · Research Collaborator · Internship</div>
-            <div class="project-title">
-                <a href="https://hanslick.acdh.oeaw.ac.at/team.html?lang=de" target="_blank" rel="noopener noreferrer">
-                    DIGITAL HUMANITIES | Vom Musikalisch-Schönen
-                </a>
-            </div>
-            <div class="project-location">Austria · Austrian Academy of Sciences (ÖAW) / FWF</div>
-            <div class="project-desc">
-                Research collaboration on Eduard Hanslick's criticism between aesthetics, journalism and scholarship, including transcription, TEI-XML encoding and linked open data, carried out within an internship framework.
-            </div>
-        </li>
+<div class="project-meta">
+2026 · PRINCIPAL INVESTIGATOR · UNDER REVISION
+</div>
 
-        <li>
-            <div class="project-meta">2021 · Co-Researcher</div>
-            <div class="project-title">
-                <a href="https://www.miun.se/globalassets/forskning/center-och-institut/demicom/demicomrapporter/reporting-under-pressure-demicomrapport-50.pdf" target="_blank" rel="noopener noreferrer">
-                    JOURNALISM | Reporting Under Pressure
-                </a>
-            </div>
-            <div class="project-location">Sweden · DEMICOM, Mid Sweden University</div>
-            <div class="project-desc">
-                Research project examining working conditions of journalists in Sweden, France and Spain during the COVID-19 pandemic.
-            </div>
-        </li>
+<div class="project-title">
+<strong>SOCIAL SCIENCES | Book Clubs in Journalism Culture, Resilience &amp; Crisis</strong>
+</div>
 
-        <li>
-            <div class="project-meta">2014 · Cultural Researcher, Journalist & Project Designer</div>
-            <div class="project-title">
-                <a href="https://www.periodistadigital.com/cultura/musica/20120830/almas-perdidas-copenhague-noticia-689401108094/" target="_blank" rel="noopener noreferrer">
-                    JOURNALISM | Documenting Contemporary Danish Music
-                </a>
-            </div>
-            <div class="project-location">Denmark</div>
-            <div class="project-desc">
-                Independent cultural research and fieldwork on contemporary Danish music, combining interviews and public dissemination.
-            </div>
-        </li>
+<div class="project-place">
+Austria · University of Vienna
+</div>
 
-        <li>
-            <div class="project-meta">2014 · Cultural Researcher & Journalist</div>
-            <div class="project-title">
-                <a href="https://revistadeletras.net/tras-las-huellas-de-hans-christian-andersen-i/" target="_blank" rel="noopener noreferrer">
-                    JOURNALISM | Hans Christian Andersen in Spain & Travel Diaries
-                </a>
-            </div>
-            <div class="project-location">Denmark / Spain</div>
-            <div class="project-desc">
-                Archival and cultural research connecting Hans Christian Andersen's intellectual and literary networks with Spain, developed through research, interviews and narrative journalism.
-            </div>
-        </li>
+<p class="project-description">
+Research proposal developed and submitted within the WWTF Resilience &amp; Crisis framework, bringing together an interdisciplinary network across social sciences, health, education and environmental research.
+</p>
 
-        <li>
-            <div class="project-meta">2008 · Radio Journalist & Producer</div>
-            <div class="project-title">
-                <a href="https://www.npla.de" target="_blank" rel="noopener noreferrer">
-                    RADIO & PODCAST JOURNALISM | Current Affairs
-                </a>
-            </div>
-            <div class="project-location">Germany · Berlin</div>
-            <div class="project-desc">
-                Co-production and presentation of audio journalism addressing social, political and cultural affairs.
-            </div>
-        </li>
+</li>
 
-    </ul>
+<li>
+
+<div class="project-meta">
+2026 · PROJECT DESIGNER &amp; LEAD
+</div>
+
+<div class="project-title">
+<strong>HEALTH HUMANITIES | Applied Arts &amp; Fiction</strong>
+</div>
+
+<div class="project-place">
+Austria · Klinikum Klagenfurt (KABEG)
+</div>
+
+<p class="project-description">
+Designed and led a non-evaluative intervention combining reading, writing and art within a clinical setting. Project funded by KABEG.
+</p>
+
+</li>
+
+<li>
+
+<div class="project-meta">
+2023–2026 · PRINCIPAL INVESTIGATOR &amp; PROJECT DESIGNER
+</div>
+
+<div class="project-title">
+<strong>SOCIAL SCIENCES | 
+<a href="https://bojoclub.hypotheses.org" class="project-link" target="_blank" rel="noopener noreferrer">
+BoJoClub: Book Clubs in Journalism Culture
+</a>
+</strong>
+</div>
+
+<div class="project-place">
+Austria · Vienna / Klagenfurt / International
+</div>
+
+<p class="project-description">
+Research and cultural project exploring reading practices, narrative journalism and memory through book-club methodologies, institutional collaborations and empirical pilot activities.
+</p>
+
+</li>
+
+<li>
+
+<div class="project-meta">
+2024 · RESEARCH COLLABORATOR · INTERNSHIP
+</div>
+
+<div class="project-title">
+<strong>DIGITAL HUMANITIES | 
+<a href="https://hanslick.acdh.oeaw.ac.at/team.html?lang=de" class="project-link" target="_blank" rel="noopener noreferrer">
+Vom Musikalisch-Schönen
+</a>
+</strong>
+</div>
+
+<div class="project-place">
+Austria · Austrian Academy of Sciences (ÖAW) / FWF
+</div>
+
+<p class="project-description">
+Research collaboration on Eduard Hanslick's criticism between aesthetics, journalism and scholarship, including transcription, TEI-XML encoding and linked open data, carried out within an internship framework.
+</p>
+
+</li>
+
+<li>
+
+<div class="project-meta">
+2021 · CO-RESEARCHER
+</div>
+
+<div class="project-title">
+<strong>JOURNALISM | 
+<a href="https://www.miun.se/globalassets/forskning/center-och-institut/demicom/demicomrapporter/reporting-under-pressure-demicomrapport-50.pdf" class="project-link" target="_blank" rel="noopener noreferrer">
+Reporting Under Pressure
+</a>
+</strong>
+</div>
+
+<div class="project-place">
+Sweden · DEMICOM, Mid Sweden University
+</div>
+
+<p class="project-description">
+Research project examining working conditions of journalists in Sweden, France and Spain during COVID-19.
+</p>
+
+</li>
+
+<li>
+
+<div class="project-meta">
+2014 · CULTURAL RESEARCHER, JOURNALIST &amp; PROJECT DESIGNER
+</div>
+
+<div class="project-title">
+<strong>JOURNALISM | 
+<a href="https://www.periodistadigital.com/cultura/musica/20120830/almas-perdidas-copenhague-noticia-689401108094/" class="project-link" target="_blank" rel="noopener noreferrer">
+Documenting Contemporary Danish Music
+</a>
+</strong>
+</div>
+
+<div class="project-place">
+Denmark
+</div>
+
+<p class="project-description">
+Independent cultural research and fieldwork on contemporary Danish music, combining interviews and public dissemination.
+</p>
+
+</li>
+
+<li>
+
+<div class="project-meta">
+2014 · CULTURAL RESEARCHER &amp; JOURNALIST
+</div>
+
+<div class="project-title">
+<strong>JOURNALISM | 
+<a href="http://revistadeletras.net/tras-las-huellas-de-hans-christian-andersen-i/" class="project-link" target="_blank" rel="noopener noreferrer">
+Hans Christian Andersen in Spain &amp; Travel Diaries
+</a>
+</strong>
+</div>
+
+<div class="project-place">
+Denmark / Spain
+</div>
+
+<p class="project-description">
+Archival and cultural research connecting Hans Christian Andersen's intellectual and literary networks with Spain, developed through research, interviews and narrative journalism.
+</p>
+
+</li>
+
+<li>
+
+<div class="project-meta">
+2008 · RADIO JOURNALIST &amp; PRODUCER
+</div>
+
+<div class="project-title">
+<strong>RADIO &amp; PODCAST JOURNALISM | 
+<a href="https://www.npla.de" class="project-link" target="_blank" rel="noopener noreferrer">
+Current Affairs
+</a>
+</strong>
+</div>
+
+<div class="project-place">
+Germany · Berlin
+</div>
+
+<p class="project-description">
+Co-production and presentation of audio journalism addressing social, political and cultural affairs.
+</p>
+
+</li>
+
+</ul>
+
 </main>
 
 <footer>
-    <p>Mercedes de Luis Andrés</p>
+<p>Mercedes de Luis Andrés</p>
 </footer>
-```
 
 </body>
 </html>
