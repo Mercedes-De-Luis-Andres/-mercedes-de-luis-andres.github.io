@@ -19,49 +19,62 @@
             background-color: var(--bg-color);
             max-width: 720px;
             margin: 0 auto;
-            padding: 4rem 1.5rem;
+            padding: 3rem 1.5rem;
         }
 
-        .back-link {
-            font-size: 0.95rem;
+        /* Navegación horizontal superior discreta */
+        nav.site-nav {
+            font-size: 0.85rem;
+            color: var(--accent-color);
+            margin-bottom: 3.5rem;
+            line-height: 1.8;
+        }
+
+        nav.site-nav a {
             text-decoration: none;
             color: var(--accent-color);
-            display: inline-block;
-            margin-bottom: 2.5rem;
             transition: color 0.2s ease;
         }
 
-        .back-link:hover {
+        nav.site-nav a:hover, nav.site-nav a.active {
             color: var(--text-color);
+            text-decoration: underline;
+        }
+
+        .nav-separator {
+            margin: 0 0.4rem;
+            color: #ccc;
         }
 
         h1 {
             font-size: 2rem;
             font-weight: normal;
-            letter-spacing: -0.5px;
+            letter-spacing: -0.3px;
             margin-bottom: 2.5rem;
             border-bottom: 1px solid var(--line-color);
             padding-bottom: 1rem;
+            line-height: 1.2;
         }
 
         h2 {
-            font-size: 1.2rem;
+            font-size: 1.15rem;
             font-weight: normal;
+            font-style: italic;
             color: var(--accent-color);
             margin-top: 2.5rem;
             margin-bottom: 1rem;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
         }
 
         ul {
             list-style-type: none;
             padding-left: 0;
+            margin-bottom: 2rem;
         }
 
         li {
-            margin-bottom: 1.2rem;
+            margin-bottom: 1rem;
             font-size: 1rem;
+            color: #3b3b3b;
         }
 
         footer {
@@ -75,26 +88,44 @@
 </head>
 <body>
 
-    <a href="index.html" class="back-link">← Mercedes de Luis Andrés</a>
+    <nav class="site-nav">
+        <a href="index.html">← Portada</a>
+        <span class="nav-separator">·</span>
+        <a href="about.html">About</a>
+        <span class="nav-separator">·</span>
+        <a href="projects.html">Projects</a>
+        <span class="nav-separator">·</span>
+        <a href="publications.html">Publications</a>
+        <span class="nav-separator">·</span>
+        <a href="talks.html">Talks & Conferences</a>
+        <span class="nav-separator">·</span>
+        <a href="teaching.html">Teaching</a>
+        <span class="nav-separator">·</span>
+        <a href="journalism.html">Journalism & Public Writing</a>
+        <span class="nav-separator">·</span>
+        <a href="wanderlust.html" class="active">Mercedes Wanderlust</a>
+        <span class="nav-separator">·</span>
+        <a href="contact.html">Contact</a>
+    </nav>
 
     <main>
         <h1>Mercedes Wanderlust</h1>
 
         <h2>Books & Film</h2>
         <ul>
-            <li>2021 — <em>Lars Von Trier y el Dogma 95: viaje iniciático por la cultura danesa.</em> Ediciones JC. ISBN 978-84-15448-52-5.</li>
-            <li>2019 — Research Award, Danish Film Directors Association.</li>
-            <li>2019 — <em>El legado vikingo.</em> Spanish TV Documentary, RTVE.</li>
-            <li>2010 — <em>Relatos de viaje.</em> Hand-written and illustrated art-book series, 20 issues. Exhibited & distributed at Panta Rhei Bookshop, Madrid.</li>
+            <li><strong>2021</strong> — Lars Von Trier y el Dogma 95: viaje iniciático por la cultura danesa. Ediciones JC. ISBN 978-84-15448-52-5.</li>
+            <li><strong>2019</strong> — Research Award, Danish Film Directors Association.</li>
+            <li><strong>2019</strong> — El legado vikingo. Spanish TV Documentary, RTVE.</li>
+            <li><strong>2010</strong> — Relatos de viaje. Hand-written and illustrated art-book series, 20 issues. Exhibited & distributed at Panta Rhei Bookshop, Madrid.</li>
         </ul>
 
         <h2>Drawing Exhibitions</h2>
         <ul>
-            <li>2026 — Light of Future Arts, group exhibition, Hofburg Palace, Vienna.</li>
-            <li>2025 — Pharmakon, solo exhibition, Apotheke an der Kettenbrückengasse, Vienna.</li>
-            <li>2025 — Carnet de Voyage, group exhibition, UN Vienna.</li>
-            <li>2017 — Art of Journalism, solo exhibition, Town Hall Library, Treviglio.</li>
-            <li>2016–2017 — Art of Journalism, solo exhibition, Public Library of Palencia.</li>
+            <li><strong>2026</strong> — Light of Future Arts, group exhibition, Hofburg Palace, Vienna.</li>
+            <li><strong>2025</strong> — Pharmakon, solo exhibition, Apotheke an der Kettenbrückengasse, Vienna.</li>
+            <li><strong>2025</strong> — Carnet de Voyage, group exhibition, UN Vienna.</li>
+            <li><strong>2017</strong> — Art of Journalism, solo exhibition, Town Hall Library, Treviglio.</li>
+            <li><strong>2016–2017</strong> — Art of Journalism, solo exhibition, Public Library of Palencia.</li>
         </ul>
     </main>
 
