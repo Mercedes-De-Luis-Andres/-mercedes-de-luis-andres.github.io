@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercedes Wanderlust · Mercedes de Luis Andrés</title>
+    <style>
+        :root {
+            --bg-color: #ffffff;
+            --text-color: #2b2b2b;
+            --accent-color: #7d6b5d;
+            --line-color: #e5e2dc;
+        }
+
+        body {
+            font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 4rem 1.5rem;
+        }
+
+        .back-link {
+            font-size: 0.95rem;
+            text-decoration: none;
+            color: var(--accent-color);
+            display: inline-block;
+            margin-bottom: 2.5rem;
+            transition: color 0.2s ease;
+        }
+
+        .back-link:hover {
+            color: var(--text-color);
+        }
+
+        h1 {
+            font-size: 2rem;
+            font-weight: normal;
+            letter-spacing: -0.5px;
+            margin-bottom: 2.5rem;
+            border-bottom: 1px solid var(--line-color);
+            padding-bottom: 1rem;
+        }
+
+        h2 {
+            font-size: 1.2rem;
+            font-weight: normal;
+            color: var(--accent-color);
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        li {
+            margin-bottom: 1.2rem;
+            font-size: 1rem;
+        }
+
+        footer {
+            border-top: 1px solid var(--line-color);
+            padding-top: 1.5rem;
+            font-size: 0.85rem;
+            color: var(--accent-color);
+            margin-top: 5rem;
+        }
+    </style>
+</head>
+<body>
+
+    <a href="index.html" class="back-link">← Mercedes de Luis Andrés</a>
+
+    <main>
+        <h1>Mercedes Wanderlust</h1>
+
+        <h2>Books & Film</h2>
+        <ul>
+            <li>2021 — <em>Lars Von Trier y el Dogma 95: viaje iniciático por la cultura danesa.</em> Ediciones JC. ISBN 978-84-15448-52-5.</li>
+            <li>2019 — Research Award, Danish Film Directors Association.</li>
+            <li>2019 — <em>El legado vikingo.</em> Spanish TV Documentary, RTVE.</li>
+            <li>2010 — <em>Relatos de viaje.</em> Hand-written and illustrated art-book series, 20 issues. Exhibited & distributed at Panta Rhei Bookshop, Madrid.</li>
+        </ul>
+
+        <h2>Drawing Exhibitions</h2>
+        <ul>
+            <li>2026 — Light of Future Arts, group exhibition, Hofburg Palace, Vienna.</li>
+            <li>2025 — Pharmakon, solo exhibition, Apotheke an der Kettenbrückengasse, Vienna.</li>
+            <li>2025 — Carnet de Voyage, group exhibition, UN Vienna.</li>
+            <li>2017 — Art of Journalism, solo exhibition, Town Hall Library, Treviglio.</li>
+            <li>2016–2017 — Art of Journalism, solo exhibition, Public Library of Palencia.</li>
+        </ul>
+    </main>
+
+    <footer>
+        <p>Mercedes de Luis Andrés</p>
+    </footer>
+
+</body>
+</html>
