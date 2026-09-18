@@ -1,333 +1,271 @@
-```html
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teaching · Mercedes de Luis Andrés</title>
 
-    <style>
-        :root {
-            --bg-color: #ffffff;
-            --text-color: #2b2b2b;
-            --accent-color: #7d6b5d;
-            --line-color: #e5e2dc;
+```
+<title>Teaching · Mercedes de Luis Andrés</title>
+
+<style>
+    :root {
+        --bg-color: #ffffff;
+        --text-color: #2b2b2b;
+        --accent-color: #7d6b5d;
+        --line-color: #e5e2dc;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 0;
+        background: var(--bg-color);
+        color: var(--text-color);
+        font-family: Georgia, Cambria, "Times New Roman", serif;
+        line-height: 1.6;
+    }
+
+    .container {
+        max-width: 720px;
+        margin: 0 auto;
+        padding: 45px 25px 55px;
+    }
+
+    nav {
+        border-bottom: 1px solid var(--line-color);
+        padding-bottom: 18px;
+        margin-bottom: 55px;
+        font-size: 0.88rem;
+        text-align: center;
+    }
+
+    nav a {
+        color: var(--text-color);
+        text-decoration: none;
+        margin: 0 5px;
+    }
+
+    nav a:hover {
+        color: var(--accent-color);
+    }
+
+    main {
+        text-align: left;
+    }
+
+    h1 {
+        font-size: 1.55rem;
+        font-weight: normal;
+        margin: 0 0 45px;
+        letter-spacing: 0.01em;
+    }
+
+    h2 {
+        font-size: 1.05rem;
+        font-weight: normal;
+        margin: 0 0 8px;
+    }
+
+    .course {
+        margin-bottom: 48px;
+    }
+
+    .institution {
+        font-size: 0.84rem;
+        color: var(--accent-color);
+        margin-bottom: 18px;
+    }
+
+    .course p {
+        margin: 0 0 14px;
+        font-size: 0.94rem;
+    }
+
+    .section {
+        border-top: 1px solid var(--line-color);
+        padding-top: 28px;
+        margin-top: 55px;
+    }
+
+    .section h2 {
+        font-size: 0.82rem;
+        text-transform: uppercase;
+        letter-spacing: 0.12em;
+        color: var(--accent-color);
+        margin-bottom: 25px;
+    }
+
+    .education-item {
+        margin-bottom: 18px;
+    }
+
+    .education-item:last-child {
+        margin-bottom: 0;
+    }
+
+    .education-title {
+        font-size: 0.94rem;
+    }
+
+    .education-details {
+        display: block;
+        font-size: 0.82rem;
+        color: #777;
+        margin-top: 2px;
+    }
+
+    @media (max-width: 600px) {
+        .container {
+            padding: 30px 20px 45px;
         }
 
-        body {
-            font-family: Georgia, Cambria, "Times New Roman", Times, serif;
-            line-height: 1.6;
-            color: var(--text-color);
-            background-color: var(--bg-color);
-            max-width: 720px;
-            margin: 0 auto;
-            padding: 3rem 1.5rem;
+        nav {
+            line-height: 2;
+            margin-bottom: 45px;
         }
 
-        nav.site-nav {
-            font-size: 0.85rem;
-            color: var(--accent-color);
-            margin-bottom: 3.5rem;
-            line-height: 1.8;
-        }
-
-        nav.site-nav a {
-            text-decoration: none;
-            color: var(--accent-color);
-            transition: color 0.2s ease;
-        }
-
-        nav.site-nav a:hover {
-            color: var(--text-color);
-            text-decoration: underline;
-        }
-
-        .nav-separator {
-            margin: 0 0.4rem;
-            color: #ccc;
+        nav a {
+            margin: 0 3px;
         }
 
         h1 {
-            font-size: 1.35rem;
-            font-weight: normal;
-            letter-spacing: -0.3px;
-            margin-bottom: 0.5rem;
-            line-height: 1.2;
+            font-size: 1.4rem;
         }
+    }
+</style>
+```
 
-        .intro {
-            font-size: 1rem;
-            color: var(--accent-color);
-            font-style: italic;
-            margin-bottom: 3rem;
-            max-width: 680px;
-        }
-
-        .teaching-item {
-            border-top: 1px solid var(--line-color);
-            padding-top: 1.8rem;
-            margin-bottom: 2.8rem;
-        }
-
-        .teaching-item h2 {
-            font-size: 1.05rem;
-            font-weight: normal;
-            margin: 0 0 0.25rem 0;
-            line-height: 1.4;
-        }
-
-        .institution {
-            font-size: 0.9rem;
-            color: var(--accent-color);
-            margin-bottom: 1.2rem;
-        }
-
-        .teaching-item p {
-            font-size: 0.95rem;
-            margin: 0 0 1rem 0;
-        }
-
-        .section-title {
-            border-top: 1px solid var(--line-color);
-            padding-top: 1.8rem;
-            margin-top: 3rem;
-            margin-bottom: 1.3rem;
-            font-size: 0.95rem;
-            text-transform: uppercase;
-            letter-spacing: 0.8px;
-            color: var(--accent-color);
-        }
-
-        .teaching-note {
-            border-top: 1px solid var(--line-color);
-            padding-top: 1.8rem;
-            margin-top: 3rem;
-            font-size: 0.92rem;
-            color: #4a4a4a;
-        }
-
-        footer {
-            border-top: 1px solid var(--line-color);
-            margin-top: 3rem;
-            padding-top: 1.5rem;
-            font-size: 0.8rem;
-            color: var(--accent-color);
-        }
-
-        @media (max-width: 600px) {
-            body {
-                padding: 2rem 1.2rem;
-            }
-
-            nav.site-nav {
-                margin-bottom: 2.8rem;
-            }
-        }
-    </style>
 </head>
 
 <body>
 
-    <nav class="site-nav">
-        <a href="projects.html">Projects</a>
-        <span class="nav-separator">·</span>
+<div class="container">
 
-        <a href="publications.html">Publications</a>
-        <span class="nav-separator">·</span>
+```
+<nav>
+    <a href="projects.html">Projects</a> ·
+    <a href="publications.html">Publications</a> ·
+    <a href="talks.html">Talks &amp; Conferences</a> ·
+    <a href="teaching.html">Teaching</a> ·
+    <a href="journalism.html">Journalism</a> ·
+    <a href="wanderlust.html">Mercedes Wanderlust</a> ·
+    <a href="contact.html">Contact</a>
+</nav>
 
-        <a href="talks.html">Talks & Conferences</a>
-        <span class="nav-separator">·</span>
+<main>
 
-        <a href="teaching.html">Teaching</a>
-        <span class="nav-separator">·</span>
+    <h1>Teaching</h1>
 
-        <a href="journalism.html">Journalism</a>
-        <span class="nav-separator">·</span>
+    <section class="course">
 
-        <a href="wanderlust.html">Mercedes Wanderlust</a>
-        <span class="nav-separator">·</span>
+        <h2>Visual Reporting: The Art of Journalism</h2>
 
-        <a href="contact.html">Contact</a>
-    </nav>
+        <div class="institution">
+            Masaryk University, Faculty of Social Studies · Autumn 2026
+        </div>
 
-    <main>
-
-        <h1>Teaching</h1>
-
-        <p class="intro">
-            My teaching brings together journalism, visual culture, literature and collective forms of learning. Across university and public-education settings, I use reading, writing, visual observation and discussion as ways of developing critical thinking, ethical awareness and students’ own narrative voices.
+        <p>
+            This seminar explores visual journalism as a culturally situated,
+            empathetic and ethical practice. It moves beyond traditional
+            paradigms of detached objectivity to examine the subjective turn
+            in visual reporting through social sciences, the ethics of care
+            and collective memory.
         </p>
 
+        <p>
+            Structured around <em>The Art of Being</em>,
+            <em>The Art of Framing</em> and <em>The Art of Seeing</em>,
+            the course combines critical theory with hands-on practice.
+            Students work with the sketch and the written notebook as tools
+            for observation, knowledge and social memory, while exploring
+            ethical questions surrounding visual representation, power and
+            the construction of meaning.
+        </p>
 
-        <section class="teaching-item">
+        <p>
+            The course brings together slow observation, field notes,
+            contextualized photography and narrative practices. Readings
+            include John Berger, Umberto Eco, Hugo Pratt, Susan Sontag
+            and Joan Tronto.
+        </p>
 
-            <h2>Visual Reporting: The Art of Journalism</h2>
+    </section>
 
-            <div class="institution">
-                Masaryk University, Faculty of Social Studies · Autumn 2026
-            </div>
+    <section class="course">
 
-            <p>
-                This seminar explores visual journalism as a culturally situated, empathetic and ethical practice. It moves beyond traditional paradigms of detached objectivity to examine the subjective turn in visual reporting through social sciences, the ethics of care and collective memory.
-            </p>
+        <h2>Lecturas Compartidas</h2>
 
-            <p>
-                Structured around <em>The Art of Being</em>, <em>The Art of Framing</em> and <em>The Art of Seeing</em>, the course combines critical theory with hands-on practice. Students work with the sketch and the written notebook as tools for observation, knowledge and social memory, while exploring ethical questions surrounding visual representation, power and the construction of meaning.
-            </p>
-
-            <p>
-                The course brings together slow observation, field notes, contextualized photography and narrative practices. Readings include John Berger, Umberto Eco, Hugo Pratt, Susan Sontag and Joan Tronto.
-            </p>
-
-        </section>
-
-
-        <section class="teaching-item">
-
-            <h2>Lecturas Compartidas</h2>
-
-            <div class="institution">
-                VHS Wiener Urania · Autumn 2026
-            </div>
-
-            <p>
-                A Spanish-language reading circle for adult learners (B1–C1), developed as a public-education adaptation of the BoJoClub approach.
-            </p>
-
-            <p>
-                The course offers moderated shared-reading sessions focused on Spanish-language literature. It represents an initial step in transferring a methodology developed through journalism education into community-based learning beyond the university.
-            </p>
-
-        </section>
-
-
-        <section class="teaching-item">
-
-            <h2>Visual Reporting</h2>
-
-            <div class="institution">
-                University of Klagenfurt · Spring 2024
-            </div>
-
-            <p>
-                An English-language seminar exploring the convergence of journalism and image through a humanist perspective, engaging with authors including Susan Sontag, John Berger and Hugo Pratt.
-            </p>
-
-            <p>
-                The course combined visual literacy, ethical reflection and inclusive storytelling with collective reading and discussion practices.
-            </p>
-
-        </section>
-
-
-        <section class="teaching-item">
-
-            <h2>Travel Journalism</h2>
-
-            <div class="institution">
-                University of Klagenfurt · Winter 2024
-            </div>
-
-            <p>
-                An English-language course examining travel narratives within literary journalism and digital media, from print culture to emerging formats.
-            </p>
-
-            <p>
-                The course focused on slow journalism, representations of “the exotic” and the relationship between media and public perception. A shared reading component, structured as a book club, formed part of the methodology.
-            </p>
-
-        </section>
-
-
-        <section class="teaching-item">
-
-            <h2>Written Journalism</h2>
-
-            <div class="institution">
-                University of Burgos · September 2020 – July 2021
-            </div>
-
-            <p>
-                A 4 ECTS course exploring the intersections between journalism and literature, with particular attention to French and Spanish traditions of narrative journalism and to music journalism.
-            </p>
-
-            <p>
-                The course developed a practice-based methodology centred on reading clubs, music clubs and handwritten writing exercises. Creative workshops such as <em>Write with Jazz</em>, together with the student-led collaborative magazine <em>This is Polar</em>, encouraged collective writing, teamwork and the discovery of students’ individual skills and vocational interests.
-            </p>
-
-        </section>
-
-
-        <section class="teaching-item">
-
-            <h2>Communication and Multimedia Development</h2>
-
-            <div class="institution">
-                University of Burgos · September 2020 – July 2021
-            </div>
-
-            <p>
-                A 4 ECTS course on multi-platform storytelling, focusing on the ethical and aesthetic dimensions of contemporary media production.
-            </p>
-
-            <p>
-                Students developed socially engaged projects, interviewed media professionals and participated in journalism competitions. The course combined practical production with critical readings, including John Berger, to reflect on visual culture and media literacy in contexts of information overload.
-            </p>
-
-        </section>
-
-
-        <section class="teaching-item">
-
-            <h2>Persuasive Communication</h2>
-
-            <div class="institution">
-                University of Burgos · September 2020 – July 2021
-            </div>
-
-            <p>
-                A course focused on identifying and analysing fallacies in media discourse through shared reading, including texts by Umberto Eco and Zygmunt Bauman.
-            </p>
-
-            <p>
-                The course combined critical analysis with the development of communication strategies for social solidarity, introducing students to foundational concepts in rhetoric and persuasive media.
-            </p>
-
-        </section>
-
-
-        <div class="section-title">
-            From classroom practice to BoJoClub
+        <div class="institution">
+            VHS Wiener Urania · Autumn 2026
         </div>
 
-        <div class="teaching-note">
-            Early experiments with reading, music and cinema clubs emerged in my teaching during the COVID-19 lockdowns. These collective classroom practices later informed the development of <strong>BoJoClub (Book Clubs in Journalism Education)</strong>, a research and teaching framework exploring reading, journalism, participation and community. The methodology has since been developed across university and public-education contexts.
+        <p>
+            A Spanish-language reading circle for adult learners (B1–C1),
+            developed as a public-education adaptation of the BoJoClub
+            approach.
+        </p>
+
+        <p>
+            The course offers moderated shared-reading sessions focused
+            on Spanish-language literature. It represents an initial step
+            in transferring a methodology developed through journalism
+            education into community-based learning beyond the university.
+        </p>
+
+    </section>
+
+    <section class="course">
+
+        <h2>Visual Reporting</h2>
+
+        <div class="institution">
+            University of Klagenfurt · Spring 2024
         </div>
 
+        <p>
+            An English-language seminar exploring the convergence of
+            journalism and image through a humanist perspective, engaging
+            with authors including Susan Sontag, John Berger and Hugo Pratt.
+        </p>
 
-        <div class="section-title">
-            Language & Adult Education
+        <p>
+            The course combined visual literacy, ethical reflection and
+            inclusive storytelling with collective reading and discussion
+            practices.
+        </p>
+
+    </section>
+
+    <section class="course">
+
+        <h2>Travel Journalism</h2>
+
+        <div class="institution">
+            University of Klagenfurt · Winter 2024
         </div>
 
-        <div class="teaching-note">
-            <strong>Spanish-language reading circle</strong><br>
-            Volkshochschule Vienna · 2026–present · B1–C1
-            <br><br>
+        <p>
+            An English-language course examining travel narratives within
+            literary journalism and digital media, from print culture to
+            emerging formats.
+        </p>
 
-            <strong>Project-Based Learning</strong><br>
-            Sunday School of Humanities, Vienna · 2026
-            <br><br>
+        <p>
+            The course focused on slow journalism, representations of
+            “the exotic” and the relationship between media and public
+            perception. A shared reading component, structured as a book
+            club, formed part of the methodology.
+        </p>
 
-            <strong>French & English</strong><br>
-            IC Idiomas, Madrid · 2019
-            <br><br>
+    </section>
 
-            <strong>Spanish Language</strong><br>
-            Rectorate of Lyon / Academy of Orléans-Tours · 2016–2017
-        </div>
+    <section class="course">
 
-    </main>
+        <h2>Written Journalism</h2>
 
-</body>
-</html>
+        <div class="institution">
+            University of Burgos · September 2020 – July 20
 ```
