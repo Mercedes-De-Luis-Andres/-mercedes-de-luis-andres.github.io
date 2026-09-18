@@ -26,7 +26,7 @@
         nav.site-nav {
             font-size: 0.85rem;
             color: var(--accent-color);
-            margin-bottom: 4rem;
+            margin-bottom: 3.5rem;
             line-height: 1.8;
         }
 
@@ -65,6 +65,7 @@
         .content-block {
             border-top: 1px solid var(--line-color);
             padding-top: 2rem;
+            margin-bottom: 3rem;
         }
 
         .quote {
@@ -72,6 +73,57 @@
             font-size: 1.05rem;
             color: #4a4a4a;
             line-height: 1.5;
+        }
+
+        /* Sección Latest Updates */
+        .updates-section {
+            border-top: 1px solid var(--line-color);
+            padding-top: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .updates-title {
+            font-size: 0.95rem;
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+            color: var(--accent-color);
+            margin-bottom: 1.2rem;
+        }
+
+        .updates-list {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .updates-list li {
+            font-size: 0.95rem;
+            margin-bottom: 0.9rem;
+            color: #3b3b3b;
+            line-height: 1.5;
+        }
+
+        .update-year {
+            color: var(--accent-color);
+            margin-right: 0.4rem;
+        }
+
+        /* Enlaces personales finales */
+        .personal-links {
+            border-top: 1px solid var(--line-color);
+            padding-top: 1.5rem;
+            font-size: 0.9rem;
+            color: var(--accent-color);
+        }
+
+        .personal-links a {
+            color: var(--accent-color);
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+
+        .personal-links a:hover {
+            color: var(--text-color);
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -86,7 +138,7 @@
         <span class="nav-separator">·</span>
         <a href="teaching.html">Teaching</a>
         <span class="nav-separator">·</span>
-        <a href="journalism.html">Journalism & Public Writing</a>
+        <a href="journalism.html">Journalism</a>
         <span class="nav-separator">·</span>
         <a href="wanderlust.html">Mercedes Wanderlust</a>
         <span class="nav-separator">·</span>
@@ -102,6 +154,21 @@
                 Amour véritable, Amitié durable,<br>
                 Et tout le reste au diable!
             </div>
+        </div>
+
+        <section class="updates-section">
+            <div class="updates-title">Latest Updates</div>
+            <ul class="updates-list">
+                <li><span class="update-year">2025</span> — Cultural perceptions of Denmark in Spain, Nordics.info.</li>
+                <li><span class="update-year">2025</span> — Field Notes: Two Nordic Conferences Shed Light on Preserving Memories of the Past and Present, NordMedia Network.</li>
+                <li><span class="update-year">2024</span> — Alexander Wilfing: walking in the steps of Eduard Hanslick, Sonograma Magazine.</li>
+                <li><span class="update-year">2023</span> — The sun is in the east: Rethinking cultural journalism, Sonograma Magazine.</li>
+                <li><span class="update-year">2022</span> — Researching celebrities in digital media: Interview with Helle Kannik Haastrup, NordMedia Network.</li>
+            </ul>
+        </section>
+
+        <div class="personal-links">
+            LinkedIn &nbsp;·&nbsp; Instagram &nbsp;·&nbsp; <a href="mailto:mercedesdel@edu.aau.at">Email</a>
         </div>
     </main>
 
