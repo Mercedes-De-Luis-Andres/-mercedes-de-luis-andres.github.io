@@ -1,4 +1,5 @@
 
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -19,58 +20,57 @@
             background-color: var(--bg-color);
             max-width: 720px;
             margin: 0 auto;
-            padding: 4rem 1.5rem;
+            padding: 3rem 1.5rem;
         }
 
-        .back-link {
-            font-size: 0.95rem;
+        /* Navegación horizontal superior discreta */
+        nav.site-nav {
+            font-size: 0.85rem;
+            color: var(--accent-color);
+            margin-bottom: 3.5rem;
+            line-height: 1.8;
+        }
+
+        nav.site-nav a {
             text-decoration: none;
             color: var(--accent-color);
-            display: inline-block;
-            margin-bottom: 2.5rem;
             transition: color 0.2s ease;
         }
 
-        .back-link:hover {
+        nav.site-nav a:hover, nav.site-nav a.active {
             color: var(--text-color);
+            text-decoration: underline;
         }
 
+        .nav-separator {
+            margin: 0 0.4rem;
+            color: #ccc;
+        }
+
+        /* Cabecera / Contenido */
         h1 {
             font-size: 2rem;
             font-weight: normal;
-            letter-spacing: -0.5px;
-            margin-bottom: 0.4rem;
+            letter-spacing: -0.3px;
+            margin-bottom: 0.3rem;
             line-height: 1.2;
         }
 
-        .meta-info {
+        .subtitle {
             font-size: 1rem;
             color: var(--accent-color);
-            margin-bottom: 0.4rem;
-        }
-
-        .subtitle {
-            font-size: 1.05rem;
-            color: var(--accent-color);
-            margin-bottom: 3rem;
+            margin-bottom: 2.5rem;
             font-style: italic;
         }
 
         .content-block {
             border-top: 1px solid var(--line-color);
-            padding-top: 2.5rem;
-        }
-
-        .about-statement {
-            font-size: 1.2rem;
-            line-height: 1.6;
-            margin-bottom: 2rem;
-            color: #1f1f1f;
+            padding-top: 2rem;
         }
 
         .quote {
             font-style: italic;
-            font-size: 1.1rem;
+            font-size: 1.05rem;
             color: #4a4a4a;
             line-height: 1.5;
         }
@@ -86,19 +86,33 @@
 </head>
 <body>
 
-    <a href="index.html" class="back-link">← Mercedes de Luis Andrés</a>
+    <nav class="site-nav">
+        <a href="index.html">← Portada</a>
+        <span class="nav-separator">·</span>
+        <a href="about.html" class="active">About</a>
+        <span class="nav-separator">·</span>
+        <a href="projects.html">Research & Projects</a>
+        <span class="nav-separator">·</span>
+        <a href="publications.html">Publications</a>
+        <span class="nav-separator">·</span>
+        <a href="talks.html">Talks & Conferences</a>
+        <span class="nav-separator">·</span>
+        <a href="teaching.html">Teaching</a>
+        <span class="nav-separator">·</span>
+        <a href="journalism.html">Journalism & Public Writing</a>
+        <span class="nav-separator">·</span>
+        <a href="wanderlust.html">Mercedes Wanderlust</a>
+        <span class="nav-separator">·</span>
+        <a href="contact.html">Contact</a>
+    </nav>
 
     <main>
         <h1>Mercedes de Luis Andrés</h1>
-        <div class="meta-info">1982 · Palencia, España</div>
         <div class="subtitle">Social Scientist · Lecturer · Essayist · Painter</div>
 
         <div class="content-block">
-            <p class="about-statement">Me interesa lo que ocurre en ese espacio donde se encuentran la bondad y la belleza.</p>
-            
             <div class="quote">
-                Amour véritable, Amitié durable,<br>
-                Et tout le reste au diable!
+                Amour véritable, Amitié durable, Et tout le reste au diable!
             </div>
         </div>
     </main>
